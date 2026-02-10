@@ -1,4 +1,4 @@
-# WPClientJourney
+# WP Client Journey (In Development)
 A WordPress-centric CRM for managing client onboarding, subscription packages, and automated account provisioning.
 
 Here is the complete README.md text for the wp-client-journey repository, tailored to the EvolveWP branding and the specific features needed for the Fife Driving Instructor Portal (and future CRM projects).
@@ -13,13 +13,13 @@ Built by [FifeCIC](https://fifecic.scot) | Part of the [EvolveWP Ecosystem](http
 
 ## 📖 Overview
 
-**EvolveWP Client Journey** streamlines the end-to-end client lifecycle directly within WordPress. Designed originally to power the *Fife Driving Instructors Portal*, it handles everything from the initial signup form and package selection to automated user role provisioning and ongoing account management.
+**EvolveWP Client Journey** streamlines the end-to-end client lifecycle directly within WordPress. Designed originally to run *FifeCIC - Community Interest Company*, it handles everything from the initial signup form and package selection to automated user role provisioning and ongoing account management.
 
 It bridges the gap between a standard contact form and a full-blown SaaS platform, allowing you to treat WordPress users as "Clients" with specific lifecycles, statuses, and service tiers.
 
 ---
 
-## ✨ Key Features
+## ✨ Coming Key Features
 
 ✅ **Automated Onboarding** - Create seamless multi-step signup flows that register users and gather data.  
 ✅ **Package Management** - Define subscription tiers (e.g., Free, Premium, Enterprise) and assign them to users.  
