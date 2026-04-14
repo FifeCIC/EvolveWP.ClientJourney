@@ -1,0 +1,212 @@
+/**
+ * evolvewp-clientjourney - Features Layout Styles
+ * 
+ * Layout for features management page.
+ * 
+ * @package evolvewp-clientjourney/CSS/Layouts
+ * @since 1.0.0
+ */
+
+/* Features Management Header */
+.evolvewp-clientjourney-features-header {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+/* Features Controls */
+.evolvewp-clientjourney-features-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+    background: #f9f9f9;
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    border: var(--evolvewp-clientjourney-border-standard);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+}
+
+/* Feature Page Sections */
+.evolvewp-clientjourney-feature-page-section {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+    border: var(--evolvewp-clientjourney-border-standard);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    background: var(--evolvewp-clientjourney-color-white);
+    box-shadow: var(--evolvewp-clientjourney-shadow);
+    transition: box-shadow 0.3s ease;
+}
+
+.evolvewp-clientjourney-feature-page-section:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,.08);
+}
+
+.evolvewp-clientjourney-feature-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--evolvewp-clientjourney-spacing-md) var(--evolvewp-clientjourney-spacing-lg);
+    background: #f7fcf7;
+    border-left: 3px solid #46b450;
+    border-bottom: var(--evolvewp-clientjourney-border-standard);
+    cursor: pointer;
+}
+
+.evolvewp-clientjourney-feature-page-header h3 {
+    margin: 0;
+}
+
+.evolvewp-clientjourney-feature-page-header h3 a {
+    text-decoration: none;
+    color: #2c7636;
+}
+
+.evolvewp-clientjourney-feature-page-header h3 .dashicons {
+    font-size: 16px;
+    vertical-align: text-bottom;
+}
+
+.evolvewp-clientjourney-feature-page-header .toggle-section {
+    color: #46b450;
+}
+
+.evolvewp-clientjourney-feature-page-content {
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+    display: none; /* Initially hidden */
+}
+
+/* Feature Tables */
+.evolvewp-clientjourney-feature-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.evolvewp-clientjourney-feature-table th {
+    text-align: left;
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    border-bottom: 2px solid #ddd;
+}
+
+.evolvewp-clientjourney-feature-table td {
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    border-bottom: 1px solid #eee;
+}
+
+.evolvewp-clientjourney-feature-table tr:hover {
+    background-color: #f7fcfe;
+}
+
+.evolvewp-clientjourney-tab-cell {
+    background-color: #f7f7f7;
+    border-right: 1px solid #eee;
+    vertical-align: top;
+}
+
+.evolvewp-clientjourney-tab-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.evolvewp-clientjourney-tab-content a {
+    text-decoration: none;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    color: #23282d;
+}
+
+.evolvewp-clientjourney-feature-mode select {
+    width: 100px;
+}
+
+/* Feature Summary */
+.evolvewp-clientjourney-feature-summary {
+    margin: var(--evolvewp-clientjourney-spacing-xl) 0;
+}
+
+.evolvewp-clientjourney-summary-box {
+    background: var(--evolvewp-clientjourney-color-white);
+    border: var(--evolvewp-clientjourney-border-standard);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.evolvewp-clientjourney-summary-box h4 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+/* Feature Navigation */
+.evolvewp-clientjourney-feature-navigation {
+    position: sticky;
+    top: 32px;
+    background: var(--evolvewp-clientjourney-color-white);
+    border-bottom: var(--evolvewp-clientjourney-border-standard);
+    padding: var(--evolvewp-clientjourney-spacing-md) 0;
+    z-index: 100;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.evolvewp-clientjourney-feature-sections-nav {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 5px;
+}
+
+.evolvewp-clientjourney-feature-nav-item {
+    display: inline-block;
+    padding: 5px 12px;
+    margin-right: 5px;
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    text-decoration: none;
+    color: #646970;
+    background: #f0f0f1;
+}
+
+.evolvewp-clientjourney-feature-nav-item:hover,
+.evolvewp-clientjourney-feature-nav-item.active {
+    background: #2271b1;
+    color: var(--evolvewp-clientjourney-color-white);
+}
+
+/* Feature row states */
+.evolvewp-clientjourney-feature-row.disabled {
+    opacity: 0.6;
+}
+
+/* Tab header */
+.evolvewp-clientjourney-tab-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+    border-bottom: 1px solid #eee;
+    padding-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-tab-header h2 {
+    margin: 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 782px) {
+    .evolvewp-clientjourney-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .evolvewp-clientjourney-tab-cell {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .evolvewp-clientjourney-tab-content {
+        flex-direction: column;
+        gap: var(--evolvewp-clientjourney-spacing-md);
+    }
+}
+
+/* Features Container */
+.evolvewp-clientjourney-features-container {
+    margin-top: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+/* Legacy classes mapping for backward compatibility */

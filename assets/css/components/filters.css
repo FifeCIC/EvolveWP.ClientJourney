@@ -1,0 +1,873 @@
+/**
+ * evolvewp-clientjourney - Filters Component Styles
+ * 
+ * Styles for filter controls, groups, and filter bars.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-clientjourney-filter-bar">
+ *   <div class="evolvewp-clientjourney-filter-group">
+ *     <label class="evolvewp-clientjourney-filter-label">Filter by:</label>
+ *     <select class="evolvewp-clientjourney-filter-select">...</select>
+ *   </div>
+ *   <div class="evolvewp-clientjourney-filter-search">
+ *     <input type="text" class="evolvewp-clientjourney-filter-search-input" />
+ *     <button class="evolvewp-clientjourney-filter-search-button">Search</button>
+ *   </div>
+ * </div>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+.evolvewp-clientjourney-filters {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl) !important;
+    padding: var(--evolvewp-clientjourney-spacing-lg) !important;
+    background: var(--evolvewp-clientjourney-color-white) !important;
+    border: var(--evolvewp-clientjourney-border-standard) !important;
+    border-radius: var(--evolvewp-clientjourney-border-radius) !important;
+}
+
+.evolvewp-clientjourney-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-clientjourney-spacing-lg);
+    align-items: flex-end;
+}
+
+.evolvewp-clientjourney-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+    gap: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-filter-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.evolvewp-clientjourney-filter-label {
+    font-size: 13px;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+    font-weight: var(--evolvewp-clientjourney-font-weight-medium);
+}
+
+.evolvewp-clientjourney-filter-select,
+.evolvewp-clientjourney-filter-search-input {
+    height: 30px;
+    border: var(--evolvewp-clientjourney-border-standard);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: 0 var(--evolvewp-clientjourney-spacing-sm);
+}
+
+.evolvewp-clientjourney-filter-search {
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-clientjourney-filter-search-input {
+    min-width: 200px;
+    margin-right: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+.evolvewp-clientjourney-filter-search-button {
+    height: 30px;
+    padding: 0 var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-clientjourney-spacing-xs);
+    margin-top: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-filter-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--evolvewp-clientjourney-color-gray-50);
+    border: var(--evolvewp-clientjourney-border-standard);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: 3px 8px;
+    font-size: 12px;
+}
+
+.evolvewp-clientjourney-filter-tag-remove {
+    margin-left: var(--evolvewp-clientjourney-spacing-xs);
+    cursor: pointer;
+    color: #666;
+}
+
+.evolvewp-clientjourney-filter-tag-remove:hover {
+    color: #dc3232;
+}
+
+.evolvewp-clientjourney-filter-group {
+    margin-right: var(--evolvewp-clientjourney-spacing-xl) !important;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md) !important;
+}
+
+.evolvewp-clientjourney-filter-group label {
+    margin-right: var(--evolvewp-clientjourney-spacing-xs) !important;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold) !important;
+}
+
+.evolvewp-clientjourney-filter, .evolvewp-clientjourney-search {
+    min-width: 150px !important;
+}
+
+.evolvewp-clientjourney-date-filter {
+    display: none;
+}
+
+.evolvewp-clientjourney-date-filter.visible {
+    display: flex;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+    align-items: flex-end;
+}
+
+.evolvewp-clientjourney-info-text {
+    margin-top: var(--evolvewp-clientjourney-spacing-md);
+    color: #666;
+    font-size: 12px;
+}
+
+.evolvewp-clientjourney-info-text .dashicons {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.evolvewp-clientjourney-display-toggle {
+    margin-left: auto;
+}
+
+.evolvewp-clientjourney-toggle-buttons {
+    display: flex;
+    gap: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+.evolvewp-clientjourney-toggle-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: #f5f5f5;
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-300);
+    border-radius: 3px;
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+
+.evolvewp-clientjourney-toggle-button .dashicons {
+    margin-right: 4px;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.evolvewp-clientjourney-toggle-button.active {
+    background: var(--evolvewp-clientjourney-color-white);
+    border-color: #0073aa;
+    color: #0073aa;
+}
+
+/* ==========================================================================
+   UI Library Filters & Search Components
+   ========================================================================== */
+
+/* Search Input Variations */
+.search-demo {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.search-label {
+    display: block;
+    font-weight: 600;
+    color: var(--evolvewp-clientjourney-color-text);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-sm);
+    font-size: 14px;
+}
+
+.search-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 40px 12px 16px;
+    border: 2px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-size: 14px;
+    line-height: 1.4;
+    transition: all 0.2s ease;
+    background: var(--evolvewp-clientjourney-color-white);
+    color: var(--evolvewp-clientjourney-color-text);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--evolvewp-clientjourney-color-primary);
+    box-shadow: 0 0 0 3px rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.1);
+}
+
+.search-input::placeholder {
+    color: var(--evolvewp-clientjourney-color-text-muted);
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+    color: var(--evolvewp-clientjourney-color-text-muted);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.search-with-clear .search-input {
+    padding-right: 80px;
+}
+
+.search-clear {
+    position: absolute;
+    right: 40px;
+    background: none;
+    border: none;
+    color: var(--evolvewp-clientjourney-color-text-muted);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    z-index: 3;
+}
+
+.search-clear:hover {
+    color: var(--evolvewp-clientjourney-color-danger);
+    background: rgba(var(--evolvewp-clientjourney-color-danger-rgb), 0.1);
+}
+
+.search-advanced .search-input {
+    padding-right: 80px;
+}
+
+.search-advanced-toggle {
+    position: absolute;
+    right: 40px;
+    background: none;
+    border: none;
+    color: var(--evolvewp-clientjourney-color-text-muted);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    z-index: 3;
+}
+
+.search-advanced-toggle:hover {
+    color: var(--evolvewp-clientjourney-color-primary);
+    background: rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.1);
+}
+
+.search-advanced-panel {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--evolvewp-clientjourney-color-white);
+    border: 2px solid var(--evolvewp-clientjourney-color-border);
+    border-top: none;
+    border-radius: 0 0 var(--evolvewp-clientjourney-border-radius) var(--evolvewp-clientjourney-border-radius);
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin-top: -2px;
+}
+
+.advanced-filter-row {
+    display: flex;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+    align-items: center;
+}
+
+/* Filter Button Groups */
+.filter-demo {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.filter-label {
+    display: block;
+    font-weight: 600;
+    color: var(--evolvewp-clientjourney-color-text);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-sm);
+    font-size: 14px;
+}
+
+.filter-button-group {
+    display: inline-flex;
+    border: 2px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    overflow: hidden;
+    background: var(--evolvewp-clientjourney-color-white);
+}
+
+.filter-button {
+    background: none;
+    border: none;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--evolvewp-clientjourney-color-text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-right: 1px solid var(--evolvewp-clientjourney-color-border-light);
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-sm);
+}
+
+.filter-button:last-child {
+    border-right: none;
+}
+
+.filter-button:hover {
+    background: var(--evolvewp-clientjourney-color-bg-hover);
+}
+
+.filter-button.active {
+    background: var(--evolvewp-clientjourney-color-primary);
+    color: var(--evolvewp-clientjourney-color-white);
+}
+
+.filter-count {
+    background: rgba(var(--evolvewp-clientjourney-color-text-rgb), 0.15);
+    color: inherit;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.filter-button.active .filter-count {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.filter-performance .filter-gainers.active {
+    background: var(--evolvewp-clientjourney-color-success);
+}
+
+.filter-performance .filter-losers.active {
+    background: var(--evolvewp-clientjourney-color-danger);
+}
+
+.filter-performance .filter-volume.active {
+    background: var(--evolvewp-clientjourney-color-info);
+}
+
+/* Advanced Filter Panels */
+.filter-panel-demo {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.filter-panel {
+    border: 2px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    background: var(--evolvewp-clientjourney-color-white);
+    overflow: hidden;
+}
+
+.filter-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    background: var(--evolvewp-clientjourney-color-bg-secondary);
+    border-bottom: 1px solid var(--evolvewp-clientjourney-color-border-light);
+    cursor: pointer;
+}
+
+.filter-panel-header h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--evolvewp-clientjourney-color-text);
+}
+
+.filter-panel-toggle {
+    background: none;
+    border: none;
+    color: var(--evolvewp-clientjourney-color-text-muted);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.filter-panel-toggle:hover {
+    color: var(--evolvewp-clientjourney-color-primary);
+    background: rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.1);
+}
+
+.filter-panel-content {
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.filter-row {
+    display: flex;
+    gap: var(--evolvewp-clientjourney-spacing-lg);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.filter-row:last-child {
+    margin-bottom: 0;
+}
+
+.filter-column {
+    flex: 1;
+    min-width: 0;
+}
+
+.filter-field-label {
+    display: block;
+    font-weight: 600;
+    color: var(--evolvewp-clientjourney-color-text);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-sm);
+    font-size: 14px;
+}
+
+.filter-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.filter-input:focus {
+    outline: none;
+    border-color: var(--evolvewp-clientjourney-color-primary);
+    box-shadow: 0 0 0 2px rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.1);
+}
+
+.filter-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-size: 14px;
+    background: var(--evolvewp-clientjourney-color-white);
+    color: var(--evolvewp-clientjourney-color-text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: var(--evolvewp-clientjourney-color-primary);
+    box-shadow: 0 0 0 2px rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.1);
+}
+
+.filter-range {
+    display: flex;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-sm);
+}
+
+.filter-range-separator {
+    color: var(--evolvewp-clientjourney-color-text-muted);
+    font-weight: 500;
+}
+
+.filter-slider {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--evolvewp-clientjourney-color-border-light);
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.filter-slider:hover {
+    opacity: 1;
+}
+
+.filter-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--evolvewp-clientjourney-color-primary);
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filter-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--evolvewp-clientjourney-color-primary);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filter-slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--evolvewp-clientjourney-spacing-xs);
+    font-size: 12px;
+    color: var(--evolvewp-clientjourney-color-text-muted);
+}
+
+.filter-actions {
+    display: flex;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+    justify-content: flex-end;
+    margin-top: var(--evolvewp-clientjourney-spacing-lg);
+    padding-top: var(--evolvewp-clientjourney-spacing-lg);
+    border-top: 1px solid var(--evolvewp-clientjourney-color-border-light);
+}
+
+/* Tag-based Filtering */
+.tag-filter-demo {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.tag-filter-container {
+    background: var(--evolvewp-clientjourney-color-white);
+    border: 2px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.tag-filter-input-wrapper {
+    display: flex;
+    gap: var(--evolvewp-clientjourney-spacing-sm);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.tag-filter-input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.tag-filter-input:focus {
+    outline: none;
+    border-color: var(--evolvewp-clientjourney-color-primary);
+    box-shadow: 0 0 0 2px rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.1);
+}
+
+.tag-add-button {
+    background: var(--evolvewp-clientjourney-color-primary);
+    color: var(--evolvewp-clientjourney-color-white);
+    border: none;
+    padding: 10px 12px;
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-add-button:hover {
+    background: var(--evolvewp-clientjourney-color-primary-dark);
+    transform: translateY(-1px);
+}
+
+.active-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-clientjourney-spacing-sm);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+    min-height: 32px;
+}
+
+.filter-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-xs);
+    background: var(--evolvewp-clientjourney-color-primary);
+    color: var(--evolvewp-clientjourney-color-white);
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.tag-remove {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-remove:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.suggested-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-clientjourney-spacing-sm);
+    align-items: center;
+}
+
+.tag-suggestions-label {
+    font-size: 13px;
+    color: var(--evolvewp-clientjourney-color-text-muted);
+    font-weight: 500;
+    margin-right: var(--evolvewp-clientjourney-spacing-sm);
+}
+
+.tag-suggestion {
+    background: var(--evolvewp-clientjourney-color-bg-secondary);
+    color: var(--evolvewp-clientjourney-color-text);
+    border: 1px solid var(--evolvewp-clientjourney-color-border-light);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tag-suggestion:hover {
+    background: var(--evolvewp-clientjourney-color-primary);
+    color: var(--evolvewp-clientjourney-color-white);
+    border-color: var(--evolvewp-clientjourney-color-primary);
+    transform: translateY(-1px);
+}
+
+/* Date Range Selectors */
+.date-filter-demo {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.date-input-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.date-input {
+    padding: 10px 40px 10px 12px;
+    border: 1px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background: var(--evolvewp-clientjourney-color-white);
+    color: var(--evolvewp-clientjourney-color-text);
+    min-width: 150px;
+}
+
+.date-input:focus {
+    outline: none;
+    border-color: var(--evolvewp-clientjourney-color-primary);
+    box-shadow: 0 0 0 2px rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.1);
+}
+
+.date-icon {
+    position: absolute;
+    right: 12px;
+    color: var(--evolvewp-clientjourney-color-text-muted);
+    pointer-events: none;
+}
+
+.date-range-wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.date-range-separator {
+    color: var(--evolvewp-clientjourney-color-text-muted);
+    font-weight: 500;
+}
+
+.date-preset-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-clientjourney-spacing-sm);
+}
+
+.date-preset-button {
+    background: var(--evolvewp-clientjourney-color-bg-secondary);
+    color: var(--evolvewp-clientjourney-color-text);
+    border: 1px solid var(--evolvewp-clientjourney-color-border);
+    padding: 8px 16px;
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.date-preset-button:hover {
+    background: var(--evolvewp-clientjourney-color-bg-hover);
+    border-color: var(--evolvewp-clientjourney-color-primary);
+}
+
+.date-preset-button.active {
+    background: var(--evolvewp-clientjourney-color-primary);
+    color: var(--evolvewp-clientjourney-color-white);
+    border-color: var(--evolvewp-clientjourney-color-primary);
+}
+
+/* Sorting Controls */
+.sort-demo {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.sort-label {
+    display: block;
+    font-weight: 600;
+    color: var(--evolvewp-clientjourney-color-text);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-sm);
+    font-size: 14px;
+}
+
+.sort-select {
+    padding: 10px 12px;
+    border: 1px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-size: 14px;
+    background: var(--evolvewp-clientjourney-color-white);
+    color: var(--evolvewp-clientjourney-color-text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 200px;
+}
+
+.sort-select:focus {
+    outline: none;
+    border-color: var(--evolvewp-clientjourney-color-primary);
+    box-shadow: 0 0 0 2px rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.1);
+}
+
+.sort-button-group {
+    display: inline-flex;
+    border: 2px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    overflow: hidden;
+    background: var(--evolvewp-clientjourney-color-white);
+}
+
+.sort-button {
+    background: none;
+    border: none;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--evolvewp-clientjourney-color-text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-right: 1px solid var(--evolvewp-clientjourney-color-border-light);
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-sm);
+}
+
+.sort-button:last-child {
+    border-right: none;
+}
+
+.sort-button:hover {
+    background: var(--evolvewp-clientjourney-color-bg-hover);
+}
+
+.sort-button.active {
+    background: var(--evolvewp-clientjourney-color-primary);
+    color: var(--evolvewp-clientjourney-color-white);
+}
+
+.sort-direction {
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.sort-button.active .sort-direction {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filter-row {
+        flex-direction: column;
+        gap: var(--evolvewp-clientjourney-spacing-md);
+    }
+    
+    .filter-button-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .filter-button {
+        flex: 1;
+        min-width: 0;
+        text-align: center;
+    }
+    
+    .date-range-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--evolvewp-clientjourney-spacing-sm);
+    }
+    
+    .date-preset-buttons {
+        justify-content: center;
+    }
+    
+    .sort-button-group {
+        display: flex;
+        width: 100%;
+    }
+    
+    .sort-button {
+        flex: 1;
+        justify-content: center;
+    }
+    
+    .advanced-filter-row {
+        flex-direction: column;
+        gap: var(--evolvewp-clientjourney-spacing-sm);
+    }
+    
+    .tag-filter-input-wrapper {
+        flex-direction: column;
+    }
+    
+    .suggested-tags {
+        justify-content: center;
+    }
+}

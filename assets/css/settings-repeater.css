@@ -1,0 +1,114 @@
+/* EvolveWP ClientJourney Repeater Field Styles */
+
+.evolvewp-clientjourney-repeater-container {
+    max-width: 800px;
+}
+
+.evolvewp-clientjourney-repeater-items {
+    margin-bottom: 15px;
+}
+
+.evolvewp-clientjourney-repeater-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.evolvewp-clientjourney-repeater-item.collapsed .evolvewp-clientjourney-repeater-item-content {
+    display: none;
+}
+
+.evolvewp-clientjourney-repeater-item-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    cursor: move;
+}
+
+.evolvewp-clientjourney-repeater-item.collapsed .evolvewp-clientjourney-repeater-item-header {
+    border-bottom: none;
+}
+
+.evolvewp-clientjourney-repeater-handle {
+    color: #999;
+    margin-right: 10px;
+    cursor: move;
+}
+
+.evolvewp-clientjourney-repeater-title {
+    flex: 1;
+    font-weight: 600;
+}
+
+.evolvewp-clientjourney-repeater-toggle,
+.evolvewp-clientjourney-repeater-remove {
+    padding: 0;
+    margin-left: 10px;
+    color: #666;
+    text-decoration: none;
+}
+
+.evolvewp-clientjourney-repeater-toggle:hover,
+.evolvewp-clientjourney-repeater-remove:hover {
+    color: #0073aa;
+}
+
+.evolvewp-clientjourney-repeater-remove:hover {
+    color: #dc3232;
+}
+
+.evolvewp-clientjourney-repeater-item-content {
+    padding: 15px;
+}
+
+.evolvewp-clientjourney-repeater-field {
+    margin-bottom: 15px;
+}
+
+.evolvewp-clientjourney-repeater-field:last-child {
+    margin-bottom: 0;
+}
+
+.evolvewp-clientjourney-repeater-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.evolvewp-clientjourney-repeater-field input[type="text"],
+.evolvewp-clientjourney-repeater-field input[type="email"],
+.evolvewp-clientjourney-repeater-field input[type="url"],
+.evolvewp-clientjourney-repeater-field input[type="number"],
+.evolvewp-clientjourney-repeater-field textarea,
+.evolvewp-clientjourney-repeater-field select {
+    width: 100%;
+    max-width: 500px;
+}
+
+.evolvewp-clientjourney-repeater-field textarea {
+    min-height: 80px;
+}
+
+.evolvewp-clientjourney-repeater-placeholder {
+    background: #f0f0f0;
+    border: 2px dashed #ddd;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.evolvewp-clientjourney-repeater-add {
+    margin-top: 10px;
+}
+
+.evolvewp-clientjourney-repeater-template {
+    display: none;
+}
+
+/* Sortable helper */
+.ui-sortable-helper {
+    opacity: 0.8;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}

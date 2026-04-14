@@ -1,0 +1,97 @@
+/**
+ * evolvewp-clientjourney Dark Theme CSS Variables
+ * 
+ * Dark theme color overrides for evolvewp-clientjourney
+ * 
+ * @package evolvewp-clientjourney/CSS/Dark
+ * @since 1.0.0
+ * @created 2024-12-21
+ */
+
+.evolvewp-clientjourney-dark-theme {
+    /* Dark Theme Colors */
+    --evolvewp-clientjourney-color-primary: #4a9eff;
+    --evolvewp-clientjourney-color-primary-dark: #2271b1;
+    --evolvewp-clientjourney-color-primary-light: #72aee6;
+    
+    --evolvewp-clientjourney-color-secondary: #8c8f94;
+    --evolvewp-clientjourney-color-secondary-dark: #646970;
+    --evolvewp-clientjourney-color-secondary-light: #a7aaad;
+    
+    --evolvewp-clientjourney-color-success: #46d369;
+    --evolvewp-clientjourney-color-success-dark: #00a32a;
+    --evolvewp-clientjourney-color-success-light: #68de7c;
+    
+    --evolvewp-clientjourney-color-warning: #f0c33c;
+    --evolvewp-clientjourney-color-warning-dark: #dba617;
+    --evolvewp-clientjourney-color-warning-light: #ffeb3b;
+    
+    --evolvewp-clientjourney-color-error: #ff6b6b;
+    --evolvewp-clientjourney-color-error-dark: #d63638;
+    --evolvewp-clientjourney-color-error-light: #ff8a80;
+    
+    --evolvewp-clientjourney-color-info: #4a9eff;
+    --evolvewp-clientjourney-color-info-dark: #2271b1;
+    --evolvewp-clientjourney-color-info-light: #a7c7e7;
+    
+    /* Dark Neutral Colors */
+    --evolvewp-clientjourney-color-white: #1e1e1e;
+    --evolvewp-clientjourney-color-black: #ffffff;
+    
+    --evolvewp-clientjourney-color-gray-50: #2d2d2d;
+    --evolvewp-clientjourney-color-gray-100: #3a3a3a;
+    --evolvewp-clientjourney-color-gray-200: #4a4a4a;
+    --evolvewp-clientjourney-color-gray-300: #5a5a5a;
+    --evolvewp-clientjourney-color-gray-400: #6a6a6a;
+    --evolvewp-clientjourney-color-gray-500: #7a7a7a;
+    --evolvewp-clientjourney-color-gray-600: #8a8a8a;
+    --evolvewp-clientjourney-color-gray-700: #9a9a9a;
+    --evolvewp-clientjourney-color-gray-800: #aaaaaa;
+    --evolvewp-clientjourney-color-gray-900: #e0e0e0;
+    
+    /* Dark Status Colors */
+    --evolvewp-clientjourney-status-success-bg: #1a3d1a;
+    --evolvewp-clientjourney-status-success-border: #2d5a2d;
+    --evolvewp-clientjourney-status-success-text: #68de7c;
+    
+    --evolvewp-clientjourney-status-warning-bg: #3d3d1a;
+    --evolvewp-clientjourney-status-warning-border: #5a5a2d;
+    --evolvewp-clientjourney-status-warning-text: #f0c33c;
+    
+    --evolvewp-clientjourney-status-error-bg: #3d1a1a;
+    --evolvewp-clientjourney-status-error-border: #5a2d2d;
+    --evolvewp-clientjourney-status-error-text: #ff6b6b;
+    
+    --evolvewp-clientjourney-status-info-bg: #1a2d3d;
+    --evolvewp-clientjourney-status-info-border: #2d4a5a;
+    --evolvewp-clientjourney-status-info-text: #4a9eff;
+
+    /* Dark Form Controls */
+    --evolvewp-clientjourney-input-bg: #2d2d2d;
+    --evolvewp-clientjourney-input-border: 1px solid #4a4a4a;
+    --evolvewp-clientjourney-input-border-focus: 1px solid #4a9eff;
+    
+    /* Update backward compatibility variables */
+    --evolvewp-clientjourney-color-white: var(--evolvewp-clientjourney-color-white);
+    --evolvewp-clientjourney-color-gray-50: var(--evolvewp-clientjourney-color-gray-50);
+    --evolvewp-clientjourney-color-gray-300: var(--evolvewp-clientjourney-color-gray-300);
+    --color-white: var(--evolvewp-clientjourney-color-white);
+    --color-gray-50: var(--evolvewp-clientjourney-color-gray-50);
+    --color-gray-300: var(--evolvewp-clientjourney-color-gray-300);
+}
+
+/* Dark Theme Color Swatch Classes */
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-color-primary { background-color: var(--evolvewp-clientjourney-color-primary) !important; }
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-color-primary-dark { background-color: var(--evolvewp-clientjourney-color-primary-dark) !important; }
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-color-primary-light { background-color: var(--evolvewp-clientjourney-color-primary-light) !important; }
+
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-color-success { background-color: var(--evolvewp-clientjourney-color-success) !important; }
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-color-warning { background-color: var(--evolvewp-clientjourney-color-warning) !important; }
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-color-error { background-color: var(--evolvewp-clientjourney-color-error) !important; }
+
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-color-white { background-color: var(--evolvewp-clientjourney-color-white) !important; border: 1px solid var(--evolvewp-clientjourney-color-gray-300) !important; }
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-color-gray-100 { background-color: var(--evolvewp-clientjourney-color-gray-100) !important; }
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-color-gray-300 { background-color: var(--evolvewp-clientjourney-color-gray-300) !important; }
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-color-gray-500 { background-color: var(--evolvewp-clientjourney-color-gray-500) !important; }
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-color-gray-700 { background-color: var(--evolvewp-clientjourney-color-gray-700) !important; }
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-color-gray-900 { background-color: var(--evolvewp-clientjourney-color-gray-900) !important; }

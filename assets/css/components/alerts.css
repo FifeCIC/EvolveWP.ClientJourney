@@ -1,0 +1,160 @@
+/**
+ * evolvewp-clientjourney - Alert Component Styles
+ * 
+ * Alert boxes, info panels, and contextual notifications.
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Admin Only Notice */
+.evolvewp-clientjourney-admin-only-notice {
+    display: flex;
+    align-items: center;
+    background-color: #f6f7f7;
+    border-left: 4px solid #2271b1;
+    padding: var(--evolvewp-clientjourney-spacing-md) 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.evolvewp-clientjourney-admin-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #2271b1;
+}
+
+.evolvewp-clientjourney-admin-text h4 {
+    margin: 0 0 5px;
+}
+
+.evolvewp-clientjourney-admin-text p {
+    margin: 0;
+}
+
+/* Demo Mode Indicator */
+.evolvewp-clientjourney-demo-indicator {
+    display: flex;
+    align-items: center;
+    background-color: #fff8e5;
+    border-left: 4px solid #dba617;
+    padding: var(--evolvewp-clientjourney-spacing-md) 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.evolvewp-clientjourney-demo-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #dba617;
+}
+
+.evolvewp-clientjourney-demo-text h4 {
+    margin: 0 0 5px;
+}
+
+.evolvewp-clientjourney-demo-text p {
+    margin: 0;
+}
+
+/* Debug Info Panel */
+.evolvewp-clientjourney-debug-info-panel {
+    background-color: #f8e3dd;
+    border: 1px dashed #d63638;
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: var(--evolvewp-clientjourney-spacing-md) 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.evolvewp-clientjourney-debug-info-panel h4 {
+    color: #d63638;
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+    font-size: var(--evolvewp-clientjourney-font-size);
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-clientjourney-debug-info-panel h4:before {
+    content: '\f348';
+    font-family: dashicons;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.evolvewp-clientjourney-debug-info-content {
+    background-color: var(--evolvewp-clientjourney-color-white);
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    border-radius: 3px;
+}
+
+.evolvewp-clientjourney-debug-info-content p {
+    font-family: monospace;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.evolvewp-clientjourney-debug-info-content p strong {
+    display: inline-block;
+    width: 150px;
+}
+
+.evolvewp-clientjourney-debug-advanced-section {
+    margin-top: 15px;
+    border-top: 1px solid #e1e1e1;
+    padding-top: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-toggle-advanced-debug {
+    cursor: pointer;
+    color: #2271b1;
+    font-weight: var(--evolvewp-clientjourney-font-weight-medium);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-clientjourney-toggle-advanced-debug .dashicons {
+    margin-right: 5px;
+    transition: transform 0.2s ease;
+}
+
+.evolvewp-clientjourney-advanced-debug-content {
+    background-color: #f9f9f9;
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    border-radius: 3px;
+    border: 1px solid #e1e1e1;
+}
+
+.evolvewp-clientjourney-advanced-debug-content h5 {
+    margin: var(--evolvewp-clientjourney-spacing-md) 0 5px;
+    font-size: var(--evolvewp-clientjourney-font-size);
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    color: #1d2327;
+}
+
+.evolvewp-clientjourney-advanced-debug-content h5:first-child {
+    margin-top: 0;
+}
+
+.evolvewp-clientjourney-advanced-debug-content pre {
+    background: var(--evolvewp-clientjourney-color-white);
+    padding: 8px;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    font-size: 12px;
+    margin: 5px 0;
+    white-space: pre-wrap;
+}
+
+.evolvewp-clientjourney-advanced-debug-content ol {
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.evolvewp-clientjourney-advanced-debug-content ol li {
+    margin-bottom: 5px;
+}
+
+/* Legacy classes mapping for backward compatibility */

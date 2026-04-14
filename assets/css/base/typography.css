@@ -1,0 +1,142 @@
+/**
+ * EvolveWP ClientJourney — Scoped Typography Styles
+ *
+ * Typography for headings, text, links, and code blocks ONLY within
+ * .evolvewp-clientjourney-admin-wrap containers. Does not affect WordPress admin chrome.
+ *
+ * Uses CSS variables defined in variables.css.
+ *
+ * @package evolvewp-clientjourney/CSS/Base
+ * @since   1.0.0
+ * @since   3.1.0 Scoped to .evolvewp-clientjourney-admin-wrap. Helper classes prefixed.
+ */
+
+/* ─────────────────────────────────────────────────────────────────────
+   Headings
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-clientjourney-admin-wrap h1,
+.evolvewp-clientjourney-admin-wrap h2,
+.evolvewp-clientjourney-admin-wrap h3,
+.evolvewp-clientjourney-admin-wrap h4,
+.evolvewp-clientjourney-admin-wrap h5,
+.evolvewp-clientjourney-admin-wrap h6 {
+  color: var(--evolvewp-clientjourney-color-gray-900);
+  font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+  line-height: 1.2;
+  margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-admin-wrap h1 {
+  font-size: 23px;
+  font-weight: var(--evolvewp-clientjourney-font-weight-bold);
+  margin-top: var(--evolvewp-clientjourney-spacing-md);
+  margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+  padding: 0;
+}
+
+.evolvewp-clientjourney-admin-wrap h2 {
+  font-size: 20px;
+  margin-top: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.evolvewp-clientjourney-admin-wrap h3 { font-size: 18px; }
+.evolvewp-clientjourney-admin-wrap h4 { font-size: 16px; }
+.evolvewp-clientjourney-admin-wrap h5 { font-size: 14px; }
+.evolvewp-clientjourney-admin-wrap h6 { font-size: 13px; }
+
+/* ─────────────────────────────────────────────────────────────────────
+   Paragraphs and text
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-clientjourney-admin-wrap p {
+  margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+  font-size: var(--evolvewp-clientjourney-font-size);
+  line-height: 1.5;
+}
+
+.evolvewp-clientjourney-admin-wrap .description {
+  color: var(--evolvewp-clientjourney-color-gray-700);
+  font-size: var(--evolvewp-clientjourney-font-size);
+  font-style: italic;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   Lists
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-clientjourney-admin-wrap ul,
+.evolvewp-clientjourney-admin-wrap ol {
+  margin-left: 20px;
+  margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-admin-wrap ul { list-style-type: disc; }
+.evolvewp-clientjourney-admin-wrap ol { list-style-type: decimal; }
+
+.evolvewp-clientjourney-admin-wrap li {
+  margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   Inline formatting
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-clientjourney-admin-wrap strong,
+.evolvewp-clientjourney-admin-wrap b {
+  font-weight: var(--evolvewp-clientjourney-font-weight-bold);
+}
+
+.evolvewp-clientjourney-admin-wrap code,
+.evolvewp-clientjourney-admin-wrap pre,
+.evolvewp-clientjourney-admin-wrap kbd {
+  font-family: var(--evolvewp-clientjourney-font-family-mono);
+  font-size: var(--evolvewp-clientjourney-font-size-sm);
+  background-color: var(--evolvewp-clientjourney-color-gray-100);
+  padding: 2px 4px;
+  border-radius: var(--evolvewp-clientjourney-border-radius-sm);
+}
+
+.evolvewp-clientjourney-admin-wrap pre {
+  padding: var(--evolvewp-clientjourney-spacing-md);
+  margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   Section titles
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-clientjourney-admin-wrap .section-title {
+  border-bottom: 1px solid var(--evolvewp-clientjourney-color-gray-300);
+  padding-bottom: var(--evolvewp-clientjourney-spacing-xs);
+  margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   Helper classes — prefixed to avoid conflicts.
+   Use .evolvewp-clientjourney-text-* instead of bare .text-* in templates.
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-clientjourney-text-small  { font-size: var(--evolvewp-clientjourney-font-size-sm); }
+.evolvewp-clientjourney-text-xs     { font-size: var(--evolvewp-clientjourney-font-size-xs); }
+.evolvewp-clientjourney-text-lg     { font-size: var(--evolvewp-clientjourney-font-size-lg); }
+.evolvewp-clientjourney-text-center { text-align: center; }
+.evolvewp-clientjourney-text-right  { text-align: right; }
+.evolvewp-clientjourney-text-left   { text-align: left; }
+
+.evolvewp-clientjourney-text-success { color: var(--evolvewp-clientjourney-color-success); }
+.evolvewp-clientjourney-text-warning { color: var(--evolvewp-clientjourney-color-warning); }
+.evolvewp-clientjourney-text-error   { color: var(--evolvewp-clientjourney-color-error); }
+.evolvewp-clientjourney-text-info    { color: var(--evolvewp-clientjourney-color-info); }
+.evolvewp-clientjourney-text-muted   { color: var(--evolvewp-clientjourney-color-gray-600); }
+
+/* ─────────────────────────────────────────────────────────────────────
+   Code syntax highlighting (for architecture/docs tabs)
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-clientjourney-admin-wrap .code-comment { color: var(--evolvewp-clientjourney-color-gray-600); }
+.evolvewp-clientjourney-admin-wrap .code-string  { color: var(--evolvewp-clientjourney-color-success-dark); }
+.evolvewp-clientjourney-admin-wrap .code-keyword { color: var(--evolvewp-clientjourney-color-wp-blue); }

@@ -1,0 +1,302 @@
+/**
+ * evolvewp-clientjourney - Metrics Component Styles
+ * 
+ * Styles for displaying metrics, stats, and data visualizations.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-clientjourney-metrics-grid">
+ *   <div class="evolvewp-clientjourney-metric-item">
+ *     <span class="evolvewp-clientjourney-metric-label">Label</span>
+ *     <span class="evolvewp-clientjourney-metric-value">Value</span>
+ *   </div>
+ * </div>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Metrics Grid */
+.evolvewp-clientjourney-metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--evolvewp-clientjourney-spacing-lg);
+    margin-top: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+/* Metric Item */
+.evolvewp-clientjourney-metric-item {
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+    background: var(--evolvewp-clientjourney-color-gray-100);
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-200);
+    text-align: center;
+}
+
+.evolvewp-clientjourney-metric-label {
+    display: block;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+    color: #444;
+}
+
+.evolvewp-clientjourney-metric-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2271b1;
+}
+
+/* Component Metrics - Used in automation */
+.evolvewp-clientjourney-component-metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+    margin: var(--evolvewp-clientjourney-spacing-lg) 0;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/**
+ * evolvewp-clientjourney - Metrics Component Styles
+ * 
+ * For displaying data metrics, stats, and numerical information.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-clientjourney-stats-grid">
+ *   <div class="evolvewp-clientjourney-stat-item">
+ *     <div class="evolvewp-clientjourney-stat-label">Label</div>
+ *     <div class="evolvewp-clientjourney-stat-value">Value</div>
+ *   </div>
+ * </div>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Stats Numbers */
+.evolvewp-clientjourney-stat-numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.evolvewp-clientjourney-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.evolvewp-clientjourney-stat-value {
+    font-size: 24px;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+}
+
+.evolvewp-clientjourney-stat-label {
+    font-size: 12px;
+    color: #666;
+}
+
+.evolvewp-clientjourney-stat-detail-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.evolvewp-clientjourney-stat-detail-label {
+    font-size: 12px;
+    color: #666;
+}
+
+.evolvewp-clientjourney-stat-detail-value {
+    font-size: 14px;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+}
+
+/* Success/Error Stats */
+.evolvewp-clientjourney-stat-item.success .evolvewp-clientjourney-stat-value {
+    color: #46b450;
+}
+
+.evolvewp-clientjourney-stat-item.error .evolvewp-clientjourney-stat-value {
+    color: #dc3232;
+}
+
+/* Table Stats */
+.evolvewp-clientjourney-table-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 10px;
+}
+
+/* Process Count */
+.evolvewp-clientjourney-process-count {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/**
+ * evolvewp-clientjourney - Metrics Component Styles
+ * 
+ * Styles for metrics, scores, charts and data visualization elements.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-clientjourney-metric-card">
+ *   <div class="evolvewp-clientjourney-metric-label">Label</div>
+ *   <div class="evolvewp-clientjourney-metric-value">Value</div>
+ * </div>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Base metrics container */
+.evolvewp-clientjourney-metrics-container {
+    margin: 20px 0;
+}
+
+/* Metric score visualization */
+.evolvewp-clientjourney-score-container {
+    position: relative;
+    height: 24px;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.evolvewp-clientjourney-score-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 2;
+    color: #333;
+}
+
+.evolvewp-clientjourney-score-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: width 0.3s ease;
+}
+
+.evolvewp-clientjourney-score-high .evolvewp-clientjourney-score-bar {
+    background-color: #46b450;
+}
+
+.evolvewp-clientjourney-score-medium .evolvewp-clientjourney-score-bar {
+    background-color: #ffb900;
+}
+
+.evolvewp-clientjourney-score-low .evolvewp-clientjourney-score-bar {
+    background-color: #dc3232;
+}
+
+.evolvewp-clientjourney-score-star {
+    color: gold;
+    margin-left: 2px;
+    font-size: 14px;
+}
+
+/* Loading indicators */
+.evolvewp-clientjourney-loader-spinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* EPS Change indicators */
+.evolvewp-clientjourney-value-positive {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.evolvewp-clientjourney-value-negative {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+.evolvewp-clientjourney-value-neutral {
+    color: #767676;
+}
+
+/* Whisper difference indicators */
+.evolvewp-clientjourney-whisper-diff {
+    display: block;
+    font-size: 11px;
+    padding: 1px 4px;
+    border-radius: 3px;
+    margin-top: 2px;
+}
+
+.evolvewp-clientjourney-whisper-positive {
+    background-color: rgba(70, 180, 80, 0.1);
+    color: #46b450;
+}
+
+.evolvewp-clientjourney-whisper-negative {
+    background-color: rgba(220, 50, 50, 0.1);
+    color: #dc3232;
+}
+
+/* Importance indicators */
+.evolvewp-clientjourney-importance-high {
+    background-color: rgba(214, 54, 56, 0.05);
+}
+
+.evolvewp-clientjourney-importance-indicator {
+    color: #d63638;
+    margin-left: 5px;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/**
+ * evolvewp-clientjourney - Metrics Component Styles
+ * 
+ * Styles for displaying metrics and statistics.
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Stat items */
+.evolvewp-clientjourney-stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: #f9f9f9;
+    border-radius: 3px;
+}
+
+.evolvewp-clientjourney-live-count {
+    color: #46b450;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+}
+
+.evolvewp-clientjourney-demo-count {
+    color: #f0c33c;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+}
+
+/* Stats grid */
+.evolvewp-clientjourney-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+/* Legacy classes mapping for backward compatibility */

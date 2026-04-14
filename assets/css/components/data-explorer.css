@@ -1,0 +1,99 @@
+/**
+ * evolvewp-clientjourney - Data Explorer Component Styles
+ * 
+ * Interface elements for exploring and displaying data.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-clientjourney-data-explorer">
+ *   <div class="evolvewp-clientjourney-data-explorer-controls">...</div>
+ *   <div class="evolvewp-clientjourney-data-explorer-response">...</div>
+ * </div>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Data Explorer Content */
+.evolvewp-clientjourney-data-explorer-content {
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+/* Data Explorer Controls */
+.evolvewp-clientjourney-data-explorer-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-clientjourney-spacing-lg);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+    align-items: flex-end;
+}
+
+.evolvewp-clientjourney-data-explorer-control {
+    flex: 1;
+    min-width: 200px;
+}
+
+.evolvewp-clientjourney-data-explorer-control label {
+    display: block;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+    font-weight: var(--evolvewp-clientjourney-font-weight-medium);
+}
+
+.evolvewp-clientjourney-data-explorer-control select,
+.evolvewp-clientjourney-data-explorer-control input {
+    width: 100%;
+}
+
+/* Data Explorer Response */
+.evolvewp-clientjourney-data-explorer-response {
+    background: #f8f8f8;
+    border: var(--evolvewp-clientjourney-border-standard);
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+    overflow: auto;
+    max-height: 400px;
+    white-space: pre-wrap;
+    font-family: monospace;
+    margin-top: var(--evolvewp-clientjourney-spacing-md);
+}
+
+/* Data Explorer Loading */
+.evolvewp-clientjourney-data-explorer-loading {
+    display: flex;
+    align-items: center;
+    margin: var(--evolvewp-clientjourney-spacing-md) 0;
+}
+
+.evolvewp-clientjourney-data-explorer-loading .spinner {
+    float: none;
+    margin-top: 0;
+    margin-right: var(--evolvewp-clientjourney-spacing-md);
+}
+
+/* Test Results */
+.evolvewp-clientjourney-api-test-results {
+    margin-top: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-test-result {
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    margin-top: var(--evolvewp-clientjourney-spacing-md);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.evolvewp-clientjourney-test-result.success {
+    background-color: #f0f9eb;
+    border-left: 4px solid #46b450;
+}
+
+.evolvewp-clientjourney-test-result.error {
+    background-color: #fdf2f2;
+    border-left: 4px solid #dc3232;
+}
+
+.evolvewp-clientjourney-test-result .dashicons {
+    margin-right: var(--evolvewp-clientjourney-spacing-xs);
+    vertical-align: middle;
+}
+
+/* Legacy classes mapping for backward compatibility */

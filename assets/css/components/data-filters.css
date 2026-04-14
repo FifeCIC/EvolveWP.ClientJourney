@@ -1,0 +1,119 @@
+/**
+ * evolvewp-clientjourney - Data Filter Component Styles
+ * 
+ * For filtering and searching data tables.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-clientjourney-filter-form">
+ *   <div class="evolvewp-clientjourney-filter-controls">
+ *     <div class="evolvewp-clientjourney-filter-row">
+ *       <div class="evolvewp-clientjourney-filter-item">
+ *         <label>Filter Label</label>
+ *         <select></select>
+ *       </div>
+ *     </div>
+ *   </div>
+ * </div>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Filter Form */
+.evolvewp-clientjourney-filter-form {
+    background: var(--evolvewp-clientjourney-color-white);
+    border: 1px solid #ccd0d4;
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+/* Filter Controls */
+.evolvewp-clientjourney-filter-controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-clientjourney-spacing-lg);
+    align-items: flex-end;
+}
+
+.evolvewp-clientjourney-filter-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.evolvewp-clientjourney-filter-actions {
+    display: flex;
+    gap: 5px;
+}
+
+/* Data Filter Controls */
+.evolvewp-clientjourney-data-filter-controls {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    background: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.evolvewp-clientjourney-data-search {
+    flex-grow: 1;
+}
+
+/* Data Table Preview */
+.evolvewp-clientjourney-table-data-preview {
+    overflow-x: auto;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.evolvewp-clientjourney-table-data-preview table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.evolvewp-clientjourney-table-data-preview th, 
+.evolvewp-clientjourney-table-data-preview td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #e5e5e5;
+}
+
+.evolvewp-clientjourney-table-data-preview th {
+    background: #f8f8f8;
+    font-weight: bold;
+}
+
+.evolvewp-clientjourney-table-data-preview tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Data Pagination */
+.evolvewp-clientjourney-data-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-pagination-info {
+    font-size: 13px;
+    color: #666;
+}
+
+.evolvewp-clientjourney-current-page, .evolvewp-clientjourney-total-pages {
+    font-weight: bold;
+}
+
+/* Loading State */
+.evolvewp-clientjourney-loading {
+    text-align: center;
+    padding: var(--evolvewp-clientjourney-spacing-xl);
+    color: #666;
+}
+
+/* Legacy classes mapping for backward compatibility */

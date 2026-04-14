@@ -1,0 +1,144 @@
+/**
+ * evolvewp-clientjourney - Badge Components
+ * 
+ * Styles for badges, indicators, and small info displays.
+ * 
+ * HTML Structure:
+ * <span class="evolvewp-clientjourney-badge evolvewp-clientjourney-badge-primary">Badge Text</span>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Base Badge */
+.evolvewp-clientjourney-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+}
+
+/* Time Badges */
+.evolvewp-clientjourney-time-badge {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.evolvewp-clientjourney-time-badge.bmo {
+    background-color: #e6f7ff;
+    color: #0073aa;
+}
+
+.evolvewp-clientjourney-time-badge.amc {
+    background-color: #fef0f0;
+    color: #d63638;
+}
+
+.evolvewp-clientjourney-time-full {
+    font-size: 12px;
+    display: none;
+}
+
+.evolvewp-clientjourney-time-specific {
+    font-weight: var(--evolvewp-clientjourney-font-weight-medium);
+}
+
+/* Sentiment Badges */
+.evolvewp-clientjourney-sentiment-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.evolvewp-clientjourney-sentiment-pct {
+    display: block;
+    font-size: 11px;
+    color: #666;
+    margin-top: 3px;
+}
+
+.evolvewp-clientjourney-sentiment-bullish {
+    background-color: #e7f5e8;
+    color: #2e7d32;
+}
+
+.evolvewp-clientjourney-sentiment-bearish {
+    background-color: #fef0f0;
+    color: #d63638;
+}
+
+.evolvewp-clientjourney-sentiment-neutral {
+    background-color: #f0f0f0;
+    color: #616161;
+}
+
+/* Sector Badges */
+.evolvewp-clientjourney-sector-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.evolvewp-clientjourney-sector-technology {
+    background-color: #e6f7ff;
+    color: #0073aa;
+}
+
+.evolvewp-clientjourney-sector-healthcare {
+    background-color: #e7f5e8;
+    color: #2e7d32;
+}
+
+.evolvewp-clientjourney-sector-financial {
+    background-color: #f5f3ff;
+    color: #673ab7;
+}
+
+.evolvewp-clientjourney-sector-consumer {
+    background-color: #fff8e1;
+    color: #f57c00;
+}
+
+.evolvewp-clientjourney-sector-industrial {
+    background-color: #f0f0f0;
+    color: #616161;
+}
+
+.evolvewp-clientjourney-sector-energy {
+    background-color: #ffeacc;
+    color: #e65100;
+}
+
+/* Report Count Badge */
+.evolvewp-clientjourney-report-count {
+    margin-left: auto;
+    background: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+}
+
+/* Demo Badge */
+.evolvewp-clientjourney-demo-badge {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: #ffb900;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+/* Legacy classes mapping for backward compatibility */

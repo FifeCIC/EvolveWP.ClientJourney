@@ -1,0 +1,142 @@
+/**
+ * evolvewp-clientjourney - API Layout Styles
+ * 
+ * Layout structures for API pages.
+ * 
+ * @package evolvewp-clientjourney/CSS/Layouts
+ * @since 1.0.0
+ */
+
+/* API Configuration Content */
+.evolvewp-clientjourney-api-configuration-content {
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+/* API Details and Sidebar Layout */
+.evolvewp-clientjourney-api-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-clientjourney-spacing-xl);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+.evolvewp-clientjourney-api-main-content {
+    flex: 1;
+    min-width: 500px;
+}
+
+.evolvewp-clientjourney-api-sidebar {
+    width: 300px;
+}
+
+/* API Capabilities */
+.evolvewp-clientjourney-api-capabilities {
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.evolvewp-clientjourney-capability-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-capability-item .dashicons {
+    margin-right: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-capability-item.available .dashicons-yes {
+    color: #46b450;
+}
+
+.evolvewp-clientjourney-capability-item.unavailable .dashicons-no {
+    color: #dc3232;
+}
+
+.evolvewp-clientjourney-capability-text {
+    flex: 1;
+}
+
+.evolvewp-clientjourney-premium-badge {
+    display: inline-block;
+    background: #f18200;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+/* Endpoints List */
+.evolvewp-clientjourney-endpoints-list {
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.evolvewp-clientjourney-endpoint-item {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+    padding-bottom: var(--evolvewp-clientjourney-spacing-lg);
+    border-bottom: 1px solid var(--evolvewp-clientjourney-color-gray-200);
+}
+
+.evolvewp-clientjourney-endpoint-item:last-child {
+    border-bottom: none;
+}
+
+.evolvewp-clientjourney-endpoint-name {
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+.evolvewp-clientjourney-endpoint-function {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+.evolvewp-clientjourney-endpoint-function code {
+    background: #f8f8f8;
+    padding: 3px 5px;
+    font-size: 12px;
+}
+
+.evolvewp-clientjourney-endpoint-view-all {
+    margin-top: var(--evolvewp-clientjourney-spacing-lg);
+    text-align: center;
+}
+
+/* evolvewp-clientjourney API Settings */
+.evolvewp-clientjourney-api-settings-container {
+    margin-top: 30px;
+    padding: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+/* API Credentials Testing */
+.evolvewp-clientjourney-api-test-credentials {
+    margin-top: var(--evolvewp-clientjourney-spacing-lg);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.evolvewp-clientjourney-test-credentials-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+/* Animation for tool sections */
+.evolvewp-clientjourney-tool-section {
+    animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0.7;}
+    to {opacity: 1;}
+}
+
+.evolvewp-clientjourney-loading-spinner {
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Legacy classes mapping for backward compatibility */

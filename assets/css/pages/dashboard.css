@@ -1,0 +1,76 @@
+/**
+ * evolvewp-clientjourney - WordPress Admin Dashboard Styles: evolvewp-clientjourney/wp-admin/index.php
+ * 
+ * @package evolvewp-clientjourney/CSS/Pages
+ * @since 1.0.0
+ */
+
+/* Recent Symbols Widget Styles */
+.evolvewp-clientjourney-recent-symbols-widget {
+    margin: -12px;
+}
+
+.evolvewp-clientjourney-recent-symbol-item {
+    display: flex;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.evolvewp-clientjourney-recent-symbol-item:last-child {
+    border-bottom: none;
+}
+
+.evolvewp-clientjourney-symbol-icon {
+    margin-right: 12px;
+}
+
+.evolvewp-clientjourney-symbol-icon img {
+    border-radius: 4px;
+    background: #f0f0f0;
+}
+
+.evolvewp-clientjourney-symbol-info {
+    flex: 1;
+}
+
+.evolvewp-clientjourney-symbol-name {
+    margin: 0 0 2px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.evolvewp-clientjourney-company-name {
+    margin: 0;
+    color: #666;
+    font-size: 12px;
+}
+
+.evolvewp-clientjourney-symbol-price {
+    text-align: right;
+}
+
+.evolvewp-clientjourney-price-value {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.evolvewp-clientjourney-price-change {
+    font-size: 12px;
+}
+
+.evolvewp-clientjourney-price-change.positive {
+    color: #0c833f;
+}
+
+.evolvewp-clientjourney-price-change.negative {
+    color: #dc3232;
+}
+
+.evolvewp-clientjourney-widget-footer {
+    padding: 8px 12px;
+    background: #f8f8f8;
+    border-top: 1px solid #eee;
+    text-align: right;
+}
+

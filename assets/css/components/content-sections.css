@@ -1,0 +1,73 @@
+/**
+ * evolvewp-clientjourney - Content Sections Component Styles
+ * 
+ * Reusable content section styles for task details, descriptions, notes.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-clientjourney-content-section">
+ *   <h3 class="evolvewp-clientjourney-section-title">Title</h3>
+ *   <div class="evolvewp-clientjourney-section-content">Content here</div>
+ * </div>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+.evolvewp-clientjourney-content-section {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+.evolvewp-clientjourney-section-title {
+    font-size: var(--evolvewp-clientjourney-font-size);
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    margin: 0 0 var(--evolvewp-clientjourney-spacing-md) 0;
+    padding-bottom: var(--evolvewp-clientjourney-spacing-sm);
+    border-bottom: var(--evolvewp-clientjourney-border-standard);
+}
+
+.evolvewp-clientjourney-section-content {
+    line-height: 1.5;
+}
+
+.evolvewp-clientjourney-section-content p {
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-section-content p:last-child {
+    margin-bottom: 0;
+}
+
+.evolvewp-clientjourney-section-content ul, 
+.evolvewp-clientjourney-section-content ol {
+    margin-left: var(--evolvewp-clientjourney-spacing-xl);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-section-content pre {
+    background-color: var(--evolvewp-clientjourney-color-gray-50);
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    overflow: auto;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-section-content.empty {
+    color: #666;
+    font-style: italic;
+}
+
+.evolvewp-clientjourney-section-loading {
+    text-align: center;
+    padding: var(--evolvewp-clientjourney-spacing-xl);
+    color: #666;
+}
+
+.evolvewp-clientjourney-section-loading .spinner {
+    float: none;
+    margin-top: 0;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+    visibility: visible;
+}
+
+/* Legacy classes mapping for backward compatibility */

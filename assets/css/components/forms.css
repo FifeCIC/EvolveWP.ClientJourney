@@ -1,0 +1,948 @@
+/**
+ * evolvewp-clientjourney - Form Component Styles
+ * 
+ * Styles for form elements and controls.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-clientjourney-form-row">
+ *   <label for="example">Label</label>
+ *   <input type="text" id="example" class="evolvewp-clientjourney-input">
+ *   <p class="evolvewp-clientjourney-description">Description text</p>
+ * </div>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Form Container */
+.evolvewp-clientjourney-form {
+    margin: 0 !important;
+}
+
+/* Form Group */
+.evolvewp-clientjourney-form-group {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg) !important;
+}
+
+/* Form Inputs */
+.evolvewp-clientjourney-input,
+.evolvewp-clientjourney-textarea {
+    width: 100% !important;
+    padding: var(--evolvewp-clientjourney-spacing-sm) !important;
+    box-sizing: border-box !important;
+    border: var(--evolvewp-clientjourney-border-standard) !important;
+    border-radius: var(--evolvewp-clientjourney-border-radius) !important;
+}
+
+.evolvewp-clientjourney-textarea {
+    min-height: 120px !important;
+}
+
+/* Form Actions */
+.evolvewp-clientjourney-form-actions {
+    display: flex !important;
+    gap: var(--evolvewp-clientjourney-spacing-md) !important;
+    margin-top: var(--evolvewp-clientjourney-spacing-md) !important;
+}
+
+/* Form Layouts */
+.evolvewp-clientjourney-form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+    gap: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+.evolvewp-clientjourney-form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+}
+
+.evolvewp-clientjourney-form-row input[type="text"],
+.evolvewp-clientjourney-form-row input[type="number"],
+.evolvewp-clientjourney-form-row select,
+.evolvewp-clientjourney-input,
+.evolvewp-clientjourney-select {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Select elements with specific sizing */
+.evolvewp-clientjourney-select {
+    display: block;
+    width: 100%;
+    padding: var(--evolvewp-clientjourney-spacing-sm) var(--evolvewp-clientjourney-spacing-md);
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--evolvewp-clientjourney-color-text);
+    background: var(--evolvewp-clientjourney-color-white);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23666' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 8px 10px;
+    border: 1px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.evolvewp-clientjourney-select:focus {
+    border-color: var(--evolvewp-clientjourney-color-primary);
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.25);
+}
+
+.evolvewp-clientjourney-select:disabled {
+    background-color: var(--evolvewp-clientjourney-color-bg-secondary);
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+.evolvewp-clientjourney-select-small {
+    display: inline-block;
+    width: auto;
+    min-width: 120px;
+    padding: 4px 24px 4px 8px;
+    font-size: 12px;
+    line-height: 1.3;
+    color: var(--evolvewp-clientjourney-color-text);
+    background: var(--evolvewp-clientjourney-color-white);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23666' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 6px center;
+    background-size: 6px 8px;
+    border: 1px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.evolvewp-clientjourney-select-small:focus {
+    border-color: var(--evolvewp-clientjourney-color-primary);
+    outline: 0;
+    box-shadow: 0 0 0 1px rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.25);
+}
+
+.evolvewp-clientjourney-select-small:disabled {
+    background-color: var(--evolvewp-clientjourney-color-bg-secondary);
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+
+
+.evolvewp-clientjourney-form-row .evolvewp-clientjourney-description {
+    color: var(--evolvewp-clientjourney-color-gray-600);
+    font-style: italic;
+    font-size: var(--evolvewp-clientjourney-font-size-sm);
+    margin-top: 5px;
+}
+
+/* Discord Settings */
+.evolvewp-clientjourney-discord-settings-container {
+    display: flex;
+    gap: 30px;
+    margin-top: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+/* Required Fields */
+span.evolvewp-clientjourney-required {
+    color: #dc3232;
+    margin-left: 3px;
+}
+
+/* Auth URL Container */
+.evolvewp-clientjourney-auth-url-container {
+    background: #f9f9f9;
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+}
+
+.evolvewp-clientjourney-auth-url-box {
+    position: relative;
+    margin-top: 8px;
+}
+
+.evolvewp-clientjourney-auth-url-box textarea {
+    height: 60px;
+    font-size: 12px;
+    padding: 8px;
+    resize: none;
+}
+
+.evolvewp-clientjourney-copy-auth-url {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.evolvewp-clientjourney-oauth-actions {
+    margin-top: var(--evolvewp-clientjourney-spacing-lg);
+    text-align: center;
+}
+
+.evolvewp-clientjourney-oauth-divider {
+    border-top: 1px solid var(--evolvewp-clientjourney-color-gray-200);
+    padding-top: 15px;
+    margin-top: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-oauth-divider h4 {
+    margin: 0 0 8px;
+}
+
+/* Legacy class mappings */
+.discord-setup-guide ol { padding-left: 20px; }
+.discord-setup-guide li { margin-bottom: 15px; }
+.discord-setup-guide strong { display: block; margin-bottom: 5px; }
+.discord-setup-guide p { margin: 5px 0 10px; }
+.discord-settings-form .form-table { margin-top: 15px; }
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--evolvewp-clientjourney-color-white);
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--evolvewp-clientjourney-color-wp-blue);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--evolvewp-clientjourney-color-wp-blue);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 24px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+/* API Response */
+.api-response {
+    background-color: var(--evolvewp-clientjourney-color-gray-50);
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-300);
+    padding: 15px;
+    overflow: auto;
+    max-height: 300px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    font-size: var(--evolvewp-clientjourney-font-size-sm);
+    line-height: 1.5;
+    color: var(--evolvewp-clientjourney-color-gray-900);
+    word-wrap: break-word;
+}
+
+/* Response Data */
+.response-data {
+    max-height: 400px;
+    overflow: auto;
+    background-color: var(--evolvewp-clientjourney-color-gray-50);
+    padding: 10px;
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-300);
+}
+
+/* GitHub Form Styles */
+.github-form-row {
+    margin-bottom: 15px;
+}
+
+.github-form-row label {
+    display: block;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    margin-bottom: 5px;
+}
+
+.github-form-row input[type="text"],
+.github-form-row select {
+    width: 100%;
+    max-width: 600px;
+}
+
+.github-form-row textarea {
+    width: 100%;
+    min-height: 200px;
+    font-family: monospace;
+}
+
+.github-form-row .required {
+    color: var(--evolvewp-clientjourney-color-error);
+}
+
+.github-form-layout {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.github-form-main {
+    flex: 2;
+}
+
+.github-form-sidebar {
+    flex: 1;
+}
+
+.labels-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.label-checkbox {
+    padding: 3px 10px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.label-checkbox input {
+    margin-right: 5px;
+}
+
+.assignees-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-300);
+    padding: 10px;
+}
+
+.assignee-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.assignee-checkbox:hover {
+    background: var(--evolvewp-clientjourney-color-gray-50);
+}
+
+.assignee-checkbox input {
+    margin-right: 10px;
+}
+
+.assignee-checkbox img {
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+
+
+/* Search and Filter Components */
+.search-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px 35px 8px 12px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #646970;
+    font-size: 16px;
+}
+
+.search-with-clear .search-input {
+    padding-right: 65px;
+}
+
+.search-clear {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #646970;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.search-advanced-toggle {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #646970;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.search-advanced-panel {
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    background: #f6f7f7;
+}
+
+.advanced-filter-row {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-button-group {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.filter-button {
+    padding: 6px 12px;
+    border: 1px solid #dcdcde;
+    background: #f6f7f7;
+    color: #646970;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filter-button.active {
+    background: #2271b1;
+    color: white;
+    border-color: #2271b1;
+}
+
+.filter-count {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 1px 6px;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+.filter-gainers.active {
+    background: #00a32a;
+    border-color: #00a32a;
+}
+
+.filter-losers.active {
+    background: #d63638;
+    border-color: #d63638;
+}
+
+.filter-panel {
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.filter-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: #f6f7f7;
+    border-bottom: 1px solid #dcdcde;
+    cursor: pointer;
+}
+
+.filter-panel-content {
+    padding: 15px;
+}
+
+.filter-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.filter-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filter-field-label {
+    font-weight: 500;
+    color: #3c434a;
+    font-size: 13px;
+}
+
+.filter-range {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-input {
+    flex: 1;
+    padding: 6px 10px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+}
+
+.filter-range-separator {
+    color: #646970;
+}
+
+.filter-select {
+    padding: 6px 10px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    background: white;
+}
+
+.filter-slider {
+    width: 100%;
+}
+
+.filter-slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #646970;
+    margin-top: 5px;
+}
+
+.filter-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #dcdcde;
+}
+
+.tag-filter-container {
+    max-width: 500px;
+}
+
+.tag-filter-input-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tag-filter-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px 0 0 4px;
+}
+
+.tag-add-button {
+    padding: 8px 12px;
+    border: 1px solid #dcdcde;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background: #f6f7f7;
+    cursor: pointer;
+}
+
+.active-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.filter-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #2271b1;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.tag-remove {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    font-size: 12px;
+}
+
+.suggested-tags {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag-suggestions-label {
+    font-size: 13px;
+    color: #646970;
+    font-weight: 500;
+}
+
+.tag-suggestion {
+    padding: 4px 8px;
+    border: 1px solid #dcdcde;
+    background: #f6f7f7;
+    border-radius: 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.tag-suggestion:hover {
+    background: #e0e0e0;
+}
+
+.date-input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.date-input {
+    padding: 8px 35px 8px 12px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+}
+
+.date-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #646970;
+    pointer-events: none;
+}
+
+.date-range-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-range-separator {
+    color: #646970;
+}
+
+.date-preset-buttons {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.date-preset-button {
+    padding: 6px 12px;
+    border: 1px solid #dcdcde;
+    background: #f6f7f7;
+    color: #646970;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.date-preset-button.active {
+    background: #2271b1;
+    color: white;
+    border-color: #2271b1;
+}
+
+.sort-button-group {
+    display: flex;
+    gap: 5px;
+}
+
+.sort-button {
+    padding: 8px 12px;
+    border: 1px solid #dcdcde;
+    background: #f6f7f7;
+    color: #646970;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.sort-button.active {
+    background: #2271b1;
+    color: white;
+    border-color: #2271b1;
+}
+
+.sort-direction {
+    font-size: 12px;
+}
+
+.sort-select {
+    padding: 8px 12px;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    background: white;
+    min-width: 200px;
+}
+
+/* ==========================================================================
+   UI Library Form Layout Components
+   ========================================================================== */
+
+/* Horizontal Form Layout */
+.evolvewp-clientjourney-form-layout-horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: var(--evolvewp-clientjourney-spacing-lg);
+    background: var(--evolvewp-clientjourney-color-white);
+    border: 2px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.evolvewp-clientjourney-form-layout-horizontal .evolvewp-clientjourney-form-row {
+    display: flex;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+    margin-bottom: 0;
+}
+
+.evolvewp-clientjourney-form-layout-horizontal .evolvewp-clientjourney-form-label {
+    flex: 0 0 120px;
+    font-weight: 600;
+    color: var(--evolvewp-clientjourney-color-text);
+    margin-bottom: 0;
+    font-size: 14px;
+    text-align: right;
+    padding-right: var(--evolvewp-clientjourney-spacing-sm);
+}
+
+.evolvewp-clientjourney-form-layout-horizontal .evolvewp-clientjourney-form-input,
+.evolvewp-clientjourney-form-layout-horizontal .evolvewp-clientjourney-form-select,
+.evolvewp-clientjourney-form-layout-horizontal .evolvewp-clientjourney-form-textarea {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 16px;
+    border: 2px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background: var(--evolvewp-clientjourney-color-white);
+    color: var(--evolvewp-clientjourney-color-text);
+}
+
+.evolvewp-clientjourney-form-layout-horizontal .evolvewp-clientjourney-form-input:focus,
+.evolvewp-clientjourney-form-layout-horizontal .evolvewp-clientjourney-form-select:focus,
+.evolvewp-clientjourney-form-layout-horizontal .evolvewp-clientjourney-form-textarea:focus {
+    outline: none;
+    border-color: var(--evolvewp-clientjourney-color-primary);
+    box-shadow: 0 0 0 3px rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.1);
+}
+
+.evolvewp-clientjourney-form-layout-horizontal .evolvewp-clientjourney-form-feedback {
+    flex: 0 0 auto;
+    margin-left: var(--evolvewp-clientjourney-spacing-sm);
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* Inline Form Layout */
+.evolvewp-clientjourney-form-layout-inline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+    background: var(--evolvewp-clientjourney-color-bg-secondary);
+    border: 1px solid var(--evolvewp-clientjourney-color-border-light);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    min-width: 120px;
+    flex: 1;
+}
+
+.evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-form-label {
+    font-weight: 600;
+    color: var(--evolvewp-clientjourney-color-text);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-form-input,
+.evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-form-select {
+    padding: 10px 12px;
+    border: 1px solid var(--evolvewp-clientjourney-color-border);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background: var(--evolvewp-clientjourney-color-white);
+    color: var(--evolvewp-clientjourney-color-text);
+    width: 100%;
+}
+
+.evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-form-input:focus,
+.evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-form-select:focus {
+    outline: none;
+    border-color: var(--evolvewp-clientjourney-color-primary);
+    box-shadow: 0 0 0 2px rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.1);
+}
+
+.evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-form-actions {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    gap: var(--evolvewp-clientjourney-spacing-sm);
+}
+
+.evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-button-primary {
+    background: var(--evolvewp-clientjourney-color-primary);
+    color: var(--evolvewp-clientjourney-color-white);
+}
+
+.evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-button-primary:hover {
+    background: var(--evolvewp-clientjourney-color-primary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(var(--evolvewp-clientjourney-color-primary-rgb), 0.3);
+}
+
+.evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-button-secondary {
+    background: var(--evolvewp-clientjourney-color-bg-secondary);
+    color: var(--evolvewp-clientjourney-color-text);
+    border: 1px solid var(--evolvewp-clientjourney-color-border);
+}
+
+.evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-button-secondary:hover {
+    background: var(--evolvewp-clientjourney-color-bg-hover);
+    border-color: var(--evolvewp-clientjourney-color-primary);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .evolvewp-clientjourney-form-layout-horizontal .evolvewp-clientjourney-form-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--evolvewp-clientjourney-spacing-sm);
+    }
+    
+    .evolvewp-clientjourney-form-layout-horizontal .evolvewp-clientjourney-form-label {
+        flex: none;
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+    }
+    
+    .evolvewp-clientjourney-form-layout-inline {
+        flex-direction: column;
+        gap: var(--evolvewp-clientjourney-spacing-sm);
+    }
+    
+    .evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-form-row {
+        min-width: auto;
+        flex: none;
+        width: 100%;
+    }
+    
+    .evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-form-actions {
+        width: 100%;
+        justify-content: stretch;
+    }
+    
+    .evolvewp-clientjourney-form-layout-inline .evolvewp-clientjourney-button {
+        flex: 1;
+    }
+}
+
+/* Responsive adjustments for filter and search components */
+@media screen and (max-width: 782px) {
+    .filter-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .date-range-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-button-group,
+    .sort-button-group,
+    .date-preset-buttons {
+        flex-direction: column;
+    }
+}

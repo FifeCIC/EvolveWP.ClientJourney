@@ -1,0 +1,59 @@
+/**
+ * evolvewp-clientjourney Dark Theme - Tabs Layout Styles
+ * 
+ * Dark theme overrides for tab interfaces.
+ * 
+ * @package evolvewp-clientjourney/CSS/Dark
+ * @since 1.0.0
+ */
+
+/* Tabs Navigation */
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-tabs-nav {
+    border-bottom: 1px solid var(--evolvewp-clientjourney-color-gray-400);
+}
+
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-tab-nav-item a {
+    color: var(--evolvewp-clientjourney-color-gray-700);
+    background-color: transparent;
+}
+
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-tab-nav-item a:hover {
+    background-color: var(--evolvewp-clientjourney-color-gray-100);
+    color: var(--evolvewp-clientjourney-color-black);
+}
+
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-tab-nav-item.active a {
+    border-color: var(--evolvewp-clientjourney-color-gray-400);
+    background-color: var(--evolvewp-clientjourney-color-white);
+    color: var(--evolvewp-clientjourney-color-black);
+    border-bottom: 1px solid var(--evolvewp-clientjourney-color-white);
+}
+
+/* Tab Content */
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-tab-content {
+    background-color: var(--evolvewp-clientjourney-color-white);
+    color: var(--evolvewp-clientjourney-color-black);
+}
+
+/* WordPress Nav Tabs Override */
+.evolvewp-clientjourney-dark-theme .nav-tab-wrapper {
+    border-bottom: 1px solid var(--evolvewp-clientjourney-color-gray-400);
+}
+
+.evolvewp-clientjourney-dark-theme .nav-tab {
+    color: var(--evolvewp-clientjourney-color-gray-700);
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.evolvewp-clientjourney-dark-theme .nav-tab:hover {
+    background-color: var(--evolvewp-clientjourney-color-gray-100);
+    color: var(--evolvewp-clientjourney-color-black);
+}
+
+.evolvewp-clientjourney-dark-theme .nav-tab-active {
+    border-color: var(--evolvewp-clientjourney-color-gray-400);
+    background-color: var(--evolvewp-clientjourney-color-white);
+    color: var(--evolvewp-clientjourney-color-black);
+    border-bottom-color: var(--evolvewp-clientjourney-color-white);
+}

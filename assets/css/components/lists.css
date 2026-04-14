@@ -1,0 +1,99 @@
+/**
+ * evolvewp-clientjourney - Lists Component Styles
+ * 
+ * Styles for various list types, including task lists, subtasks, etc.
+ * 
+ * HTML Structure:
+ * <ul class="evolvewp-clientjourney-list">
+ *   <li class="evolvewp-clientjourney-list-item">
+ *     <div class="evolvewp-clientjourney-list-content">Content here</div>
+ *   </li>
+ * </ul>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+.evolvewp-clientjourney-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.evolvewp-clientjourney-list-item {
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    border-bottom: var(--evolvewp-clientjourney-border-standard);
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-clientjourney-list-item:last-child {
+    border-bottom: none;
+}
+
+.evolvewp-clientjourney-list-content {
+    flex: 1;
+}
+
+/* Task Lists */
+.evolvewp-clientjourney-task-list .evolvewp-clientjourney-list-item {
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    transition: background-color 0.2s ease;
+}
+
+.evolvewp-clientjourney-task-list .evolvewp-clientjourney-list-item:hover {
+    background-color: var(--evolvewp-clientjourney-color-gray-50);
+}
+
+.evolvewp-clientjourney-task-list .evolvewp-clientjourney-list-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-task-title {
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    flex: 1;
+    min-width: 200px;
+}
+
+.evolvewp-clientjourney-task-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-lg);
+    color: #666;
+    font-size: 13px;
+}
+
+/* Subtask Lists */
+.evolvewp-clientjourney-subtask-list {
+    margin-top: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-subtask-list .evolvewp-clientjourney-list-item {
+    padding: var(--evolvewp-clientjourney-spacing-sm) var(--evolvewp-clientjourney-spacing-md);
+    background-color: var(--evolvewp-clientjourney-color-gray-50);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+    border: var(--evolvewp-clientjourney-border-standard);
+}
+
+.evolvewp-clientjourney-subtask-checkbox {
+    margin-right: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-subtask-title {
+    flex: 1;
+}
+
+.evolvewp-clientjourney-subtask-list .evolvewp-clientjourney-list-item.completed {
+    background-color: #f0f9eb;
+}
+
+.evolvewp-clientjourney-subtask-list .evolvewp-clientjourney-list-item.completed .evolvewp-clientjourney-subtask-title {
+    text-decoration: line-through;
+    color: #666;
+}
+
+/* Legacy classes mapping for backward compatibility */

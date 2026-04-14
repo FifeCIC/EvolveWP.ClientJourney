@@ -1,0 +1,83 @@
+/**
+ * evolvewp-clientjourney - Form Controls Component Styles
+ * 
+ * Special form controls beyond basic inputs.
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Radio Group */
+.evolvewp-clientjourney-radio-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--evolvewp-clientjourney-spacing-md);
+    margin-top: var(--evolvewp-clientjourney-spacing-md);
+}
+
+/* Weekday Checkboxes */
+.evolvewp-clientjourney-weekday-checkboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: var(--evolvewp-clientjourney-spacing-md);
+    margin-top: var(--evolvewp-clientjourney-spacing-md);
+}
+
+/* Form Row */
+.evolvewp-clientjourney-form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.evolvewp-clientjourney-form-group.half {
+    flex: 0 0 calc(50% - 20px);
+    margin: 0 10px;
+}
+
+/* Schedule Actions */
+.evolvewp-clientjourney-schedule-actions {
+    margin-top: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+/* Log Controls */
+.evolvewp-clientjourney-log-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+    background: var(--evolvewp-clientjourney-color-white);
+    border: 1px solid #ccd0d4;
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+}
+
+.evolvewp-clientjourney-log-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+}
+
+/* Trade Filters */
+.evolvewp-clientjourney-trades-filters {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+    background: var(--evolvewp-clientjourney-color-white);
+    border: 1px solid #ccd0d4;
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+}
+
+.evolvewp-clientjourney-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.evolvewp-clientjourney-filter-group {
+    flex: 1 1 auto;
+    min-width: 150px;
+}
+
+/* Legacy classes mapping for backward compatibility */

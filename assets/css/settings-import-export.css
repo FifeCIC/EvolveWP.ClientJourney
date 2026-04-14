@@ -1,0 +1,23 @@
+/* EvolveWP ClientJourney Import/Export Settings Styles */
+
+.evolvewp-clientjourney-import-export {
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.evolvewp-clientjourney-import-export h2 {
+    margin-top: 0;
+}
+
+.evolvewp-clientjourney-import-export .dashicons {
+    margin-right: 5px;
+}
+
+.evolvewp-clientjourney-import-section,
+.evolvewp-clientjourney-export-section {
+    margin: 20px 0;
+}

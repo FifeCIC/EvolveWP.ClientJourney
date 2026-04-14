@@ -1,0 +1,87 @@
+/**
+ * EvolveWP ClientJourney — Scoped CSS Reset
+ *
+ * Normalises rendering ONLY within .evolvewp-clientjourney-admin-wrap containers.
+ * A plugin must never apply a global reset — that breaks the WordPress
+ * admin menu, toolbar, and every other plugin's UI.
+ *
+ * The only global rule is box-sizing: border-box, which is safe and
+ * already expected by WordPress core since 4.4.
+ *
+ * @package evolvewp-clientjourney/CSS/Base
+ * @since   1.0.0
+ * @since   3.1.0 Scoped to .evolvewp-clientjourney-admin-wrap. No longer global.
+ */
+
+/* Box sizing — safe to apply globally */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   Everything below is scoped to EvolveWP ClientJourney's own admin content wrapper.
+   WordPress admin chrome (menus, toolbar, notices) is untouched.
+   ───────────────────────────────────────────────────────────────────── */
+
+.evolvewp-clientjourney-admin-wrap {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--evolvewp-clientjourney-color-gray-900);
+}
+
+.evolvewp-clientjourney-admin-wrap h1,
+.evolvewp-clientjourney-admin-wrap h2,
+.evolvewp-clientjourney-admin-wrap h3,
+.evolvewp-clientjourney-admin-wrap h4,
+.evolvewp-clientjourney-admin-wrap h5,
+.evolvewp-clientjourney-admin-wrap h6,
+.evolvewp-clientjourney-admin-wrap p,
+.evolvewp-clientjourney-admin-wrap blockquote,
+.evolvewp-clientjourney-admin-wrap pre,
+.evolvewp-clientjourney-admin-wrap dl,
+.evolvewp-clientjourney-admin-wrap dd,
+.evolvewp-clientjourney-admin-wrap ol,
+.evolvewp-clientjourney-admin-wrap ul,
+.evolvewp-clientjourney-admin-wrap fieldset,
+.evolvewp-clientjourney-admin-wrap figure {
+  margin: 0;
+  padding: 0;
+}
+
+.evolvewp-clientjourney-admin-wrap ol,
+.evolvewp-clientjourney-admin-wrap ul {
+  list-style: none;
+}
+
+.evolvewp-clientjourney-admin-wrap table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.evolvewp-clientjourney-admin-wrap img {
+  max-width: 100%;
+  height: auto;
+}
+
+.evolvewp-clientjourney-admin-wrap a {
+  color: var(--evolvewp-clientjourney-color-wp-blue);
+  text-decoration: none;
+}
+
+.evolvewp-clientjourney-admin-wrap a:hover,
+.evolvewp-clientjourney-admin-wrap a:focus {
+  color: var(--evolvewp-clientjourney-color-primary-dark);
+  text-decoration: underline;
+}
+
+/* Focus ring for interactive elements within EvolveWP ClientJourney content */
+.evolvewp-clientjourney-admin-wrap a:focus,
+.evolvewp-clientjourney-admin-wrap button:focus,
+.evolvewp-clientjourney-admin-wrap input:focus,
+.evolvewp-clientjourney-admin-wrap textarea:focus,
+.evolvewp-clientjourney-admin-wrap select:focus {
+  outline: var(--evolvewp-clientjourney-focus-ring);
+  outline-offset: var(--evolvewp-clientjourney-focus-ring-offset);
+}

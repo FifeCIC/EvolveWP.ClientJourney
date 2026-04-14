@@ -1,0 +1,1219 @@
+/**
+ * evolvewp-clientjourney - Status Component Styles
+ * 
+ * Status indicators, badges, and operational status elements.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-clientjourney-status evolvewp-clientjourney-status-active">
+ *   <span class="evolvewp-clientjourney-status-indicator"></span>
+ *   <span class="evolvewp-clientjourney-status-text">Status Text</span>
+ * </div>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Status Badges */
+.evolvewp-clientjourney-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-clientjourney-border-radius-sm);
+    font-size: var(--evolvewp-clientjourney-font-size-xs);
+    font-weight: var(--evolvewp-clientjourney-font-weight-medium);
+}
+
+.evolvewp-clientjourney-status-success {
+    background-color: #dff0d8;
+    color: var(--evolvewp-clientjourney-color-success);
+}
+
+.evolvewp-clientjourney-status-warning {
+    background-color: #fcf8e3;
+    color: var(--evolvewp-clientjourney-color-warning-dark);
+}
+
+.evolvewp-clientjourney-status-error {
+    background-color: #f2dede;
+    color: var(--evolvewp-clientjourney-color-error-dark);
+}
+
+.evolvewp-clientjourney-status-info {
+    background-color: #d9edf7;
+    color: var(--evolvewp-clientjourney-color-info-dark);
+}
+
+/* Old Styles Mapping */
+/* Service Status Badges */
+.service-status-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: var(--evolvewp-clientjourney-border-radius-sm);
+    font-weight: var(--evolvewp-clientjourney-font-weight-bold);
+}
+
+.service-status-badge.operational {
+    background-color: #edfaef;
+    color: var(--evolvewp-clientjourney-color-success);
+}
+
+.service-status-badge.disruption {
+    background-color: var(--evolvewp-clientjourney-color-warning-light);
+    color: var(--evolvewp-clientjourney-color-warning-dark);
+}
+
+.service-status-badge.outage {
+    background-color: #fbeaea;
+    color: var(--evolvewp-clientjourney-color-error);
+}
+
+/* Method Badges */
+.method-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-clientjourney-border-radius-sm);
+    font-size: var(--evolvewp-clientjourney-font-size-xs);
+    font-weight: var(--evolvewp-clientjourney-font-weight-bold);
+    color: var(--evolvewp-clientjourney-color-white);
+    text-align: center;
+    min-width: 50px;
+}
+
+.method-get {
+    background-color: var(--evolvewp-clientjourney-color-method-get);
+}
+
+.method-post {
+    background-color: var(--evolvewp-clientjourney-color-method-post);
+}
+
+.method-put {
+    background-color: var(--evolvewp-clientjourney-color-method-put);
+}
+
+.method-delete {
+    background-color: var(--evolvewp-clientjourney-color-method-delete);
+}
+
+.method-ws {
+    background-color: var(--evolvewp-clientjourney-color-method-ws);
+}
+
+/* Directive Type Badges */
+.evolvewp-clientjourney-directive-type {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.evolvewp-clientjourney-directive-type.bullish {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.evolvewp-clientjourney-directive-type.bearish {
+    background-color: #ffcdd2;
+    color: #c62828;
+}
+
+.evolvewp-clientjourney-directive-type.neutral {
+    background-color: #e0e0e0;
+    color: #616161;
+}
+
+/* Directive Status Badges */
+.evolvewp-clientjourney-directive-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.evolvewp-clientjourney-directive-status.ready {
+    background-color: #bbdefb;
+    color: #1565c0;
+}
+
+.evolvewp-clientjourney-directive-status.not-ready {
+    background-color: #ffe0b2;
+    color: #ef6c00;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Premium Badge */
+.premium-badge {
+    display: inline-block;
+    background: var(--evolvewp-clientjourney-color-premium);
+    color: var(--evolvewp-clientjourney-color-white);
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: var(--evolvewp-clientjourney-border-radius-sm);
+    margin-left: 5px;
+}
+
+/* Feature Status Badge */
+.feature-status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-clientjourney-border-radius-sm);
+    font-size: var(--evolvewp-clientjourney-font-size-xs);
+    font-weight: var(--evolvewp-clientjourney-font-weight-medium);
+}
+
+.status-live {
+    background: #d1ffd6;
+    color: var(--evolvewp-clientjourney-color-success-dark);
+}
+
+.status-demo {
+    background: var(--evolvewp-clientjourney-color-warning-light);
+    color: #96600c;
+}
+
+/* Completion Stats Section */
+.completion-stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background: var(--evolvewp-clientjourney-color-white);
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-200);
+    padding: 15px;
+}
+
+.stat-box {
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-weight: var(--evolvewp-clientjourney-font-weight-bold);
+    margin-right: 5px;
+}
+
+.feature-tab-link {
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--evolvewp-clientjourney-color-wp-blue);
+}
+
+.feature-tab-link:hover {
+    color: var(--evolvewp-clientjourney-color-wp-blue-hover);
+    text-decoration: underline;
+}
+
+/* Issue Status Badge */
+.issue-status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-clientjourney-border-radius-sm);
+    font-size: var(--evolvewp-clientjourney-font-size-xs);
+    text-transform: capitalize;
+}
+
+.issue-status-badge.open {
+    background-color: #2cbe4e;
+    color: var(--evolvewp-clientjourney-color-white);
+}
+
+.issue-status-badge.closed {
+    background-color: #cb2431;
+    color: var(--evolvewp-clientjourney-color-white);
+}
+
+/* Status Indicator System */
+.status-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.status-green {
+    background-color: var(--evolvewp-clientjourney-color-success);
+}
+
+.status-orange {
+    background-color: var(--evolvewp-clientjourney-color-warning);
+}
+
+.status-red {
+    background-color: var(--evolvewp-clientjourney-color-error);
+}
+
+.status-grey {
+    background-color: #72777c;
+}
+
+/* Status Header with Actions */
+.status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.status-header h3 {
+    margin: 0;
+}
+
+.status-actions {
+    display: flex;
+    gap: 5px;
+}
+
+/* Progress Bar */
+.progress-bar-wrapper {
+    background-color: #f0f0f1;
+    height: 16px;
+    position: relative;
+    border-radius: var(--evolvewp-clientjourney-border-radius-sm);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    background-color: var(--evolvewp-clientjourney-color-wp-blue);
+    height: 100%;
+    border-radius: var(--evolvewp-clientjourney-border-radius-sm);
+}
+
+/* Environment indicators */
+.demo-env {
+    color: var(--evolvewp-clientjourney-color-orange);
+    font-weight: bold;
+}
+
+.live-env {
+    color: var(--evolvewp-clientjourney-color-success);
+    font-weight: bold;
+}
+
+.live-trading {
+    color: var(--evolvewp-clientjourney-color-error);
+    font-weight: bold;
+}
+
+.paper-trading {
+    color: var(--evolvewp-clientjourney-color-info);
+    font-weight: bold;
+}
+
+/* Consensus indicators */
+.consensus-high { 
+    color: var(--evolvewp-clientjourney-color-success); 
+    font-weight: bold; 
+}
+
+.consensus-medium { 
+    color: var(--evolvewp-clientjourney-color-warning); 
+    font-weight: bold; 
+}
+
+.consensus-low { 
+    color: var(--evolvewp-clientjourney-color-error-dark); 
+    font-weight: bold; 
+}
+
+/* Percentage difference indicators */
+.positive-pct { 
+    color: var(--evolvewp-clientjourney-color-success); 
+    font-weight: bold; 
+}
+
+.negative-pct { 
+    color: var(--evolvewp-clientjourney-color-error-dark); 
+    font-weight: bold; 
+}
+
+/* Status Containers */
+.evolvewp-clientjourney-status-header {
+    border-bottom: 1px solid var(--evolvewp-clientjourney-color-gray-200);
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--evolvewp-clientjourney-color-gray-100);
+}
+
+.evolvewp-clientjourney-status-header h3 {
+    margin: 0;
+    font-size: var(--evolvewp-clientjourney-font-size);
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+}
+
+.evolvewp-clientjourney-status-actions {
+    display: flex;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-status-actions a {
+    text-decoration: none;
+    color: #555;
+}
+
+.evolvewp-clientjourney-status-actions a:hover {
+    color: #0073aa;
+}
+
+/* Status Data Display */
+.evolvewp-clientjourney-status-data-columns {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+    gap: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+.evolvewp-clientjourney-status-data-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.evolvewp-clientjourney-status-data-item {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+.evolvewp-clientjourney-status-label {
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+.evolvewp-clientjourney-status-value {
+    font-size: 16px;
+    font-weight: var(--evolvewp-clientjourney-font-weight-medium);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+.evolvewp-clientjourney-status-value.active {
+    color: #46b450;
+}
+
+.evolvewp-clientjourney-status-value.inactive {
+    color: #dc3232;
+}
+
+.evolvewp-clientjourney-status-value.operational {
+    color: #46b450;
+}
+
+.evolvewp-clientjourney-status-value.disruption, 
+.evolvewp-clientjourney-status-value.outage, 
+.evolvewp-clientjourney-status-value.maintenance {
+    color: #dc3232;
+}
+
+.evolvewp-clientjourney-status-message {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+.evolvewp-clientjourney-status-timestamp {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Rate Limits */
+.evolvewp-clientjourney-rate-limits {
+    margin-top: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+.evolvewp-clientjourney-rate-limit-item {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-rate-limit-title {
+    font-weight: var(--evolvewp-clientjourney-font-weight-medium);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+.evolvewp-clientjourney-rate-limit-bar {
+    height: 6px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+.evolvewp-clientjourney-rate-limit-progress {
+    height: 100%;
+    background-color: #0073aa;
+    width: 0;
+}
+
+.evolvewp-clientjourney-rate-limit-text {
+    font-size: 12px;
+    color: #666;
+}
+
+.evolvewp-clientjourney-rate-limit-reset {
+    font-size: 12px;
+    color: #999;
+    margin-top: var(--evolvewp-clientjourney-spacing-md);
+}
+
+/* API Status Indicators */
+.evolvewp-clientjourney-api-status {
+    display: flex;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+    padding: var(--evolvewp-clientjourney-spacing-md) var(--evolvewp-clientjourney-spacing-xl);
+    margin-left: auto;
+}
+
+.evolvewp-clientjourney-api-status.active .evolvewp-clientjourney-status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #46b450;
+}
+
+.evolvewp-clientjourney-api-status.inactive .evolvewp-clientjourney-status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dc3232;
+}
+
+.evolvewp-clientjourney-status-text {
+    font-weight: var(--evolvewp-clientjourney-font-weight-medium);
+}
+
+.evolvewp-clientjourney-api-status.active .evolvewp-clientjourney-status-text {
+    color: #46b450;
+}
+
+.evolvewp-clientjourney-api-status.inactive .evolvewp-clientjourney-status-text {
+    color: #dc3232;
+}
+
+/* API Badges */
+.evolvewp-clientjourney-api-badges {
+    display: flex;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-api-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-xs);
+    background: #f1f1f1;
+    color: #555;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Key Status */
+.evolvewp-clientjourney-key-status-container {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.evolvewp-clientjourney-key-status-container h5 {
+    margin: var(--evolvewp-clientjourney-spacing-md) 0 var(--evolvewp-clientjourney-spacing-xs);
+    font-size: var(--evolvewp-clientjourney-font-size);
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    color: #50575e;
+}
+
+.evolvewp-clientjourney-key-status {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+    padding: 8px 10px;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-clientjourney-key-status.missing-key {
+    background-color: #fdf2f2;
+    border-left: 4px solid #dc3232;
+}
+
+.evolvewp-clientjourney-key-status.valid-key {
+    background-color: #f0f9eb;
+    border-left: 4px solid #46b450;
+}
+
+.evolvewp-clientjourney-key-status .dashicons {
+    margin-right: var(--evolvewp-clientjourney-spacing-xs);
+    vertical-align: middle;
+}
+
+.evolvewp-clientjourney-key-status .dashicons-warning {
+    color: #dc3232;
+}
+
+.evolvewp-clientjourney-key-status .dashicons-yes {
+    color: #46b450;
+}
+
+/* Mode Toggle Buttons */
+.evolvewp-clientjourney-mode-toggle-button {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    text-transform: uppercase;
+    margin-left: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Trading Mode Button Styles */
+.evolvewp-clientjourney-trading-mode-toggle-button.paper {
+    background-color: #f0c33c;
+    color: #644c00;
+}
+
+.evolvewp-clientjourney-trading-mode-toggle-button.live {
+    background-color: #46b450;
+    color: var(--evolvewp-clientjourney-color-white);
+}
+
+/* Service Status Button Styles */
+.evolvewp-clientjourney-service-status-toggle-button.operational {
+    background-color: #46b450;
+    color: var(--evolvewp-clientjourney-color-white);
+}
+
+.evolvewp-clientjourney-service-status-toggle-button.disabled {
+    background-color: #dc3232;
+    color: var(--evolvewp-clientjourney-color-white);
+}
+
+/* Demo Mode Button Styles */
+.evolvewp-clientjourney-demo-mode-toggle-button.demo-on {
+    background-color: #f0c33c;
+    color: #644c00;
+}
+
+.evolvewp-clientjourney-demo-mode-toggle-button.demo-off {
+    background-color: #47a8d7;
+    color: var(--evolvewp-clientjourney-color-white);
+}
+
+/* Button Forms */
+.evolvewp-clientjourney-service-status-form, 
+.evolvewp-clientjourney-trading-mode-button-form, 
+.evolvewp-clientjourney-demo-mode-button-form {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Algorithm Status Indicators */
+.evolvewp-clientjourney-status-indicator-wrapper {
+    text-align: center;
+    margin: var(--evolvewp-clientjourney-spacing-xl) 0;
+}
+
+.evolvewp-clientjourney-status-indicator {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 8px 16px;
+    background: #f1f1f1;
+}
+
+.evolvewp-clientjourney-status-running {
+    background: #d4f4e2;
+    color: #1d9d74;
+}
+
+.evolvewp-clientjourney-status-stopped {
+    background: #f8d7da;
+    color: #dc3545;
+}
+
+.evolvewp-clientjourney-status-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.evolvewp-clientjourney-status-running .evolvewp-clientjourney-status-dot {
+    background-color: #1d9d74;
+    animation: pulse 2s infinite;
+}
+
+.evolvewp-clientjourney-status-stopped .evolvewp-clientjourney-status-dot {
+    background-color: #dc3545;
+}
+
+.evolvewp-clientjourney-runtime-display {
+    text-align: center;
+    margin: var(--evolvewp-clientjourney-spacing-xl) 0;
+}
+
+/* Trade Action Status */
+.evolvewp-clientjourney-trade-action {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.evolvewp-clientjourney-trade-buy {
+    background-color: #d4f4e2;
+    color: #1d9d74;
+}
+
+.evolvewp-clientjourney-trade-sell {
+    background-color: #f8d7da;
+    color: #dc3545;
+}
+
+.evolvewp-clientjourney-score {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-weight: bold;
+}
+
+.evolvewp-clientjourney-score-high {
+    background-color: #d4f4e2;
+    color: #1d9d74;
+}
+
+.evolvewp-clientjourney-score-medium {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.evolvewp-clientjourney-score-low {
+    background-color: #f8d7da;
+    color: #dc3545;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Automation Status Indicators */
+.evolvewp-clientjourney-status-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: var(--evolvewp-clientjourney-spacing-lg);
+    background: var(--evolvewp-clientjourney-color-gray-100);
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-200);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+.evolvewp-clientjourney-status-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: var(--evolvewp-clientjourney-spacing-sm);
+}
+
+.evolvewp-clientjourney-status-running .evolvewp-clientjourney-status-dot {
+    background-color: #46b450;
+    box-shadow: 0 0 0 3px rgba(70, 180, 80, 0.3);
+}
+
+.evolvewp-clientjourney-status-stopped .evolvewp-clientjourney-status-dot {
+    background-color: #dc3232;
+    box-shadow: 0 0 0 3px rgba(220, 50, 50, 0.3);
+}
+
+.evolvewp-clientjourney-runtime-display {
+    margin-right: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Database Table Status */
+.evolvewp-clientjourney-table-status {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.evolvewp-clientjourney-status-good {
+    background-color: #d4f9d4;
+    color: #1e7e1e;
+}
+
+.evolvewp-clientjourney-status-warning {
+    background-color: #fff8e5;
+    color: #956d00;
+}
+
+.evolvewp-clientjourney-status-error {
+    background-color: #ffd6d6;
+    color: #c72121;
+}
+
+.evolvewp-clientjourney-process-status-badge {
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.evolvewp-clientjourney-status-badge-active {
+    background-color: #d4f9d4;
+    color: #1e7e1e;
+}
+
+.evolvewp-clientjourney-status-badge-warning {
+    background-color: #fff8e5;
+    color: #956d00;
+}
+
+.evolvewp-clientjourney-status-badge-error, 
+.evolvewp-clientjourney-status-badge-inactive {
+    background-color: #ffd6d6;
+    color: #c72121;
+}
+
+.evolvewp-clientjourney-status-badge-not-implemented {
+    background-color: #f0f0f0;
+    color: #6c6c6c;
+}
+
+/* Database Table Status */
+.evolvewp-clientjourney-table-exists {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.evolvewp-clientjourney-table-missing {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+.evolvewp-clientjourney-missing-table {
+    background-color: #fff9f9 !important;
+}
+
+.evolvewp-clientjourney-warning-table {
+    background-color: #ffffd8 !important;
+}
+
+.evolvewp-clientjourney-table-warning {
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-clientjourney-table-warning .dashicons {
+    color: #f0b849;
+    margin-right: 5px;
+}
+
+/* Process Status */
+.evolvewp-clientjourney-process-status-good {
+    color: #1e7e1e;
+}
+
+.evolvewp-clientjourney-process-status-warning {
+    color: #956d00;
+}
+
+.evolvewp-clientjourney-process-status-error {
+    color: #c72121;
+}
+
+.evolvewp-clientjourney-process-status-not-implemented {
+    color: #6c6c6c;
+}
+
+.evolvewp-clientjourney-not-implemented-count {
+    font-size: 11px;
+    font-weight: normal;
+    font-style: italic;
+    color: #6c6c6c;
+}
+
+.evolvewp-clientjourney-process-issues {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.evolvewp-clientjourney-warning-count {
+    color: #956d00;
+}
+
+.evolvewp-clientjourney-error-count {
+    color: #c72121;
+}
+
+/* API Status Badge */
+.evolvewp-clientjourney-status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.evolvewp-clientjourney-status-success {
+    background-color: #d4f9d4;
+    color: #1e7e1e;
+}
+
+.evolvewp-clientjourney-status-error {
+    background-color: #ffd6d6;
+    color: #c72121;
+}
+
+.evolvewp-clientjourney-status-pending {
+    background-color: #e5e5e5;
+    color: #666;
+}
+
+/* Status badge styling */
+.evolvewp-clientjourney-status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 60px;
+}
+
+.evolvewp-clientjourney-status-badge.ready {
+    background-color: #e7f7ed;
+    color: #46b450;
+    border: 1px solid #c8e6d0;
+}
+
+.evolvewp-clientjourney-status-badge.wip {
+    background-color: #f6f7f7;
+    color: #72777c;
+    border: 1px solid #ddd;
+}
+
+.evolvewp-clientjourney-status-badge.live {
+    background-color: #e7f7ed;
+    color: #46b450;
+    border: 1px solid #c8e6d0;
+}
+
+.evolvewp-clientjourney-status-badge.demo {
+    background-color: #fef8e8;
+    color: #f0c33c;
+    border: 1px solid #f8e6b8;
+}
+
+.evolvewp-clientjourney-status-badge.disabled {
+    background-color: #f6f7f7;
+    color: #72777c;
+    border: 1px solid #ddd;
+}
+
+/* Feature Mode Indicators */
+.evolvewp-clientjourney-feature-mode-indicator {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.evolvewp-clientjourney-feature-mode-indicator.live {
+    background-color: #e7f7ed;
+    color: #46b450;
+    border: 1px solid #c8e6d0;
+}
+
+.evolvewp-clientjourney-feature-mode-indicator.demo {
+    background-color: #fef8e8;
+    color: #f0c33c;
+    border: 1px solid #f8e6b8;
+}
+
+.evolvewp-clientjourney-feature-mode-indicator.disabled {
+    background-color: #f6f7f7;
+    color: #72777c;
+    border: 1px solid #ddd;
+}
+
+.evolvewp-clientjourney-feature-mode.live {
+    color: #46b450;
+}
+
+.evolvewp-clientjourney-feature-mode.demo {
+    color: #f0c33c;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Status Panel */
+.evolvewp-clientjourney-status-panel {
+    background: #f9f9f9;
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: 15px;
+}
+
+.evolvewp-clientjourney-status-section {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+    border-bottom: 1px solid var(--evolvewp-clientjourney-color-gray-200);
+    padding-bottom: 15px;
+}
+
+.evolvewp-clientjourney-status-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.evolvewp-clientjourney-status-section h4 {
+    margin: 0 0 var(--evolvewp-clientjourney-spacing-md);
+    font-size: var(--evolvewp-clientjourney-font-size);
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+}
+
+/* Status Indicators */
+.evolvewp-clientjourney-status-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+.evolvewp-clientjourney-status-success {
+    color: #46b450;
+}
+
+.evolvewp-clientjourney-status-error {
+    color: #dc3232;
+}
+
+.evolvewp-clientjourney-status-neutral {
+    color: #646970;
+}
+
+.evolvewp-clientjourney-status-text {
+    margin-left: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+/* Status Actions */
+.evolvewp-clientjourney-status-actions {
+    margin-top: var(--evolvewp-clientjourney-spacing-lg);
+    text-align: center;
+}
+
+/* Badge System */
+.evolvewp-clientjourney-admin-badge {
+    position: absolute;
+    top: var(--evolvewp-clientjourney-spacing-md);
+    right: var(--evolvewp-clientjourney-spacing-md);
+    background-color: #2271b1;
+    color: white;
+    padding: 2px 8px;
+    font-size: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.evolvewp-clientjourney-demo-badge {
+    position: absolute;
+    top: var(--evolvewp-clientjourney-spacing-md);
+    right: var(--evolvewp-clientjourney-spacing-md);
+    background-color: #dba617;
+    color: white;
+    padding: 2px 8px;
+    font-size: 10px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Task Status Indicators */
+.evolvewp-clientjourney-status-indicator {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    margin: 0 auto !important;
+}
+
+.evolvewp-clientjourney-status-indicator.pending {
+    background-color: #f0ad4e !important;
+}
+
+.evolvewp-clientjourney-status-indicator.in-progress {
+    background-color: #5bc0de !important;
+}
+
+.evolvewp-clientjourney-status-indicator.completed {
+    background-color: #5cb85c !important;
+}
+
+/* Priority Indicators */
+.evolvewp-clientjourney-priority-indicator {
+    display: inline-block !important;
+    padding: 3px 8px !important;
+    border-radius: 3px !important;
+    font-size: 0.9em !important;
+}
+
+.evolvewp-clientjourney-priority-indicator.priority-1 {
+    background-color: #f2dede !important;
+    color: #a94442 !important;
+}
+
+.evolvewp-clientjourney-priority-indicator.priority-2 {
+    background-color: #fcf8e3 !important;
+    color: #8a6d3b !important;
+}
+
+.evolvewp-clientjourney-priority-indicator.priority-3 {
+    background-color: #d9edf7 !important;
+    color: #31708f !important;
+}
+
+/* Detail Status */
+.evolvewp-clientjourney-detail-status {
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold) !important;
+}
+
+.evolvewp-clientjourney-detail-status.status-completed {
+    background-color: #e8f5e9 !important;
+    color: #2e7d32 !important;
+}
+
+.evolvewp-clientjourney-detail-status.status-pending {
+    background-color: #fff8e1 !important;
+    color: #f57c00 !important;
+}
+
+.evolvewp-clientjourney-detail-status.status-in-progress {
+    background-color: #e3f2fd !important;
+    color: #1976d2 !important;
+}
+
+/* Cache Status */
+.evolvewp-clientjourney-cache-status {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-top: var(--evolvewp-clientjourney-spacing-md) !important;
+    padding: 8px 12px !important;
+    background-color: #f9f9f9 !important;
+    border-radius: var(--evolvewp-clientjourney-border-radius) !important;
+    font-size: 12px !important;
+}
+
+.evolvewp-clientjourney-status-label {
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold) !important;
+}
+
+.evolvewp-clientjourney-status-fresh {
+    color: #46b450 !important;
+}
+
+.evolvewp-clientjourney-status-stale {
+    color: #ffb900 !important;
+}
+
+/* Legacy classes mapping for backward compatibility */
+/* Status Indicators Showcase Styles */
+.status-indicators-showcase .component-demo { 
+    margin-bottom: 20px; 
+}
+
+.status-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.evolvewp-clientjourney-status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.evolvewp-clientjourney-status-success {
+    background-color: var(--evolvewp-clientjourney-color-success);
+}
+
+.evolvewp-clientjourney-status-warning {
+    background-color: var(--evolvewp-clientjourney-color-warning);
+}
+
+.evolvewp-clientjourney-status-error {
+    background-color: var(--evolvewp-clientjourney-color-error);
+}
+
+.evolvewp-clientjourney-status-info {
+    background-color: var(--evolvewp-clientjourney-color-info);
+}
+
+.evolvewp-clientjourney-status-processing {
+    background-color: var(--evolvewp-clientjourney-color-primary);
+}
+
+.evolvewp-clientjourney-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    display: inline-block;
+}
+
+.evolvewp-clientjourney-badge-success {
+    background-color: var(--evolvewp-clientjourney-color-success-light);
+    color: var(--evolvewp-clientjourney-color-success);
+}
+
+.evolvewp-clientjourney-badge-warning {
+    background-color: var(--evolvewp-clientjourney-color-warning-light);
+    color: var(--evolvewp-clientjourney-color-warning);
+}
+
+.evolvewp-clientjourney-badge-error {
+    background-color: var(--evolvewp-clientjourney-color-error-light);
+    color: var(--evolvewp-clientjourney-color-error);
+}
+
+.evolvewp-clientjourney-badge-info {
+    background-color: var(--evolvewp-clientjourney-color-info-light);
+    color: var(--evolvewp-clientjourney-color-info);
+}
+
+.evolvewp-clientjourney-badge-neutral {
+    background-color: var(--evolvewp-clientjourney-color-border-light);
+    color: var(--evolvewp-clientjourney-color-text-light);
+}
+
+.evolvewp-clientjourney-status-success-icon {
+    color: var(--evolvewp-clientjourney-color-success);
+}
+
+.evolvewp-clientjourney-status-warning-icon {
+    color: var(--evolvewp-clientjourney-color-warning);
+}
+
+.evolvewp-clientjourney-status-error-icon {
+    color: var(--evolvewp-clientjourney-color-error);
+}
+
+.evolvewp-clientjourney-status-info-icon {
+    color: var(--evolvewp-clientjourney-color-info);
+}
+
+.evolvewp-clientjourney-status-processing-icon {
+    color: var(--evolvewp-clientjourney-color-primary);
+}

@@ -1,0 +1,183 @@
+/**
+ * evolvewp-clientjourney CSS Variables
+ * 
+ * Global CSS custom properties for consistent styling
+ * 
+ * @package evolvewp-clientjourney/CSS/Base
+ * @since 1.0.0
+ * @created 2024-12-21
+ */
+
+:root {
+    /* Colors - WordPress Admin Color Scheme */
+    --evolvewp-clientjourney-color-primary: #2271b1;
+    --evolvewp-clientjourney-color-primary-dark: #135e96;
+    --evolvewp-clientjourney-color-primary-light: #72aee6;
+    
+    --evolvewp-clientjourney-color-secondary: #646970;
+    --evolvewp-clientjourney-color-secondary-dark: #50575e;
+    --evolvewp-clientjourney-color-secondary-light: #8c8f94;
+    
+    --evolvewp-clientjourney-color-success: #00a32a;
+    --evolvewp-clientjourney-color-success-dark: #007317;
+    --evolvewp-clientjourney-color-success-light: #68de7c;
+    
+    --evolvewp-clientjourney-color-warning: #dba617;
+    --evolvewp-clientjourney-color-warning-dark: #996b00;
+    --evolvewp-clientjourney-color-warning-light: #f0c33c;
+    
+    --evolvewp-clientjourney-color-error: #d63638;
+    --evolvewp-clientjourney-color-error-dark: #b32d2e;
+    --evolvewp-clientjourney-color-error-light: #e65054;
+    
+    --evolvewp-clientjourney-color-info: #72aee6;
+    --evolvewp-clientjourney-color-info-dark: #2271b1;
+    --evolvewp-clientjourney-color-info-light: #a7c7e7;
+    
+    /* Neutral Colors */
+    --evolvewp-clientjourney-color-white: #ffffff;
+    --evolvewp-clientjourney-color-black: #000000;
+    
+    --evolvewp-clientjourney-color-gray-50: #f6f7f7;
+    --evolvewp-clientjourney-color-gray-100: #f0f0f1;
+    --evolvewp-clientjourney-color-gray-200: #e0e0e0;
+    --evolvewp-clientjourney-color-gray-300: #dcdcde;
+    --evolvewp-clientjourney-color-gray-400: #c3c4c7;
+    --evolvewp-clientjourney-color-gray-500: #a7aaad;
+    --evolvewp-clientjourney-color-gray-600: #8c8f94;
+    --evolvewp-clientjourney-color-gray-700: #646970;
+    --evolvewp-clientjourney-color-gray-800: #50575e;
+    --evolvewp-clientjourney-color-gray-900: #1d2327;
+    
+    /* WordPress Blue Variants */
+    --evolvewp-clientjourney-color-wp-blue: #2271b1;
+    --evolvewp-clientjourney-color-wp-blue-dark: #135e96;
+    --evolvewp-clientjourney-color-wp-blue-light: #72aee6;
+    
+    /* Spacing Scale */
+    --evolvewp-clientjourney-spacing-xs: 4px;
+    --evolvewp-clientjourney-spacing-sm: 8px;
+    --evolvewp-clientjourney-spacing-md: 12px;
+    --evolvewp-clientjourney-spacing-lg: 16px;
+    --evolvewp-clientjourney-spacing-xl: 20px;
+    --evolvewp-clientjourney-spacing-2xl: 24px;
+    --evolvewp-clientjourney-spacing-3xl: 32px;
+    --evolvewp-clientjourney-spacing-4xl: 40px;
+    --evolvewp-clientjourney-spacing-5xl: 48px;
+    
+    /* Typography */
+    --evolvewp-clientjourney-font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --evolvewp-clientjourney-font-family-mono: Consolas, Monaco, monospace;
+    
+    --evolvewp-clientjourney-font-size-xs: 11px;
+    --evolvewp-clientjourney-font-size-sm: 12px;
+    --evolvewp-clientjourney-font-size: 13px;
+    --evolvewp-clientjourney-font-size-md: 14px;
+    --evolvewp-clientjourney-font-size-lg: 16px;
+    --evolvewp-clientjourney-font-size-xl: 18px;
+    --evolvewp-clientjourney-font-size-2xl: 22px;
+    --evolvewp-clientjourney-font-size-3xl: 28px;
+    
+    --evolvewp-clientjourney-font-weight-normal: 400;
+    --evolvewp-clientjourney-font-weight-medium: 500;
+    --evolvewp-clientjourney-font-weight-semibold: 600;
+    --evolvewp-clientjourney-font-weight-bold: 700;
+    
+    --evolvewp-clientjourney-line-height-tight: 1.2;
+    --evolvewp-clientjourney-line-height-normal: 1.4;
+    --evolvewp-clientjourney-line-height-relaxed: 1.6;
+    
+    /* Border Radius */
+    --evolvewp-clientjourney-border-radius-sm: 2px;
+    --evolvewp-clientjourney-border-radius: 4px;
+    --evolvewp-clientjourney-border-radius-md: 6px;
+    --evolvewp-clientjourney-border-radius-lg: 8px;
+    --evolvewp-clientjourney-border-radius-xl: 12px;
+    --evolvewp-clientjourney-border-radius-full: 9999px;
+    
+    /* Borders */
+    --evolvewp-clientjourney-border-width: 1px;
+    --evolvewp-clientjourney-border-width-thick: 2px;
+    --evolvewp-clientjourney-border-style: solid;
+    --evolvewp-clientjourney-border-color: var(--evolvewp-clientjourney-color-gray-300);
+    --evolvewp-clientjourney-border-standard: var(--evolvewp-clientjourney-border-width) var(--evolvewp-clientjourney-border-style) var(--evolvewp-clientjourney-border-color);
+    
+    /* Shadows */
+    --evolvewp-clientjourney-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --evolvewp-clientjourney-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --evolvewp-clientjourney-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --evolvewp-clientjourney-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --evolvewp-clientjourney-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+    
+    /* Z-Index Scale */
+    --evolvewp-clientjourney-z-index-dropdown: 1000;
+    --evolvewp-clientjourney-z-index-modal: 1050;
+    --evolvewp-clientjourney-z-index-popover: 1060;
+    --evolvewp-clientjourney-z-index-tooltip: 1070;
+    --evolvewp-clientjourney-z-index-toast: 1080;
+    
+    /* Transitions */
+    --evolvewp-clientjourney-transition-fast: 150ms ease;
+    --evolvewp-clientjourney-transition-normal: 250ms ease;
+    --evolvewp-clientjourney-transition-slow: 350ms ease;
+    
+    /* Component Specific */
+    --evolvewp-clientjourney-button-padding-x: var(--evolvewp-clientjourney-spacing-md);
+    --evolvewp-clientjourney-button-padding-y: var(--evolvewp-clientjourney-spacing-sm);
+    --evolvewp-clientjourney-input-padding-x: var(--evolvewp-clientjourney-spacing-md);
+    --evolvewp-clientjourney-input-padding-y: var(--evolvewp-clientjourney-spacing-sm);
+    
+    /* Form Controls */
+    --evolvewp-clientjourney-input-bg: var(--evolvewp-clientjourney-color-white);
+    --evolvewp-clientjourney-input-border: var(--evolvewp-clientjourney-border-standard);
+    --evolvewp-clientjourney-input-border-focus: var(--evolvewp-clientjourney-border-width) var(--evolvewp-clientjourney-border-style) var(--evolvewp-clientjourney-color-primary);
+    --evolvewp-clientjourney-input-border-radius: var(--evolvewp-clientjourney-border-radius);
+    
+    /* Status Colors */
+    --evolvewp-clientjourney-status-success-bg: #d4edda;
+    --evolvewp-clientjourney-status-success-border: #c3e6cb;
+    --evolvewp-clientjourney-status-success-text: #155724;
+    
+    --evolvewp-clientjourney-status-warning-bg: #fff3cd;
+    --evolvewp-clientjourney-status-warning-border: #ffeaa7;
+    --evolvewp-clientjourney-status-warning-text: #856404;
+    
+    --evolvewp-clientjourney-status-error-bg: #f8d7da;
+    --evolvewp-clientjourney-status-error-border: #f5c6cb;
+    --evolvewp-clientjourney-status-error-text: #721c24;
+    
+    --evolvewp-clientjourney-status-info-bg: #d1ecf1;
+    --evolvewp-clientjourney-status-info-border: #bee5eb;
+    --evolvewp-clientjourney-status-info-text: #0c5460;
+
+    /* Focus Ring — consistent focus style for accessibility */
+    --evolvewp-clientjourney-focus-ring: 2px solid var(--evolvewp-clientjourney-color-primary);
+    --evolvewp-clientjourney-focus-ring-offset: 1px;
+
+    /* Accent Color — secondary brand color for highlights */
+    --evolvewp-clientjourney-color-accent: #2271b1;
+    --evolvewp-clientjourney-color-accent-light: #72aee6;
+    --evolvewp-clientjourney-color-accent-dark: #135e96;
+}
+
+/* Color Swatch Classes — used by the UI Library color palette showcase */
+.evolvewp-clientjourney-color-primary { background-color: var(--evolvewp-clientjourney-color-primary) !important; }
+.evolvewp-clientjourney-color-primary-dark { background-color: var(--evolvewp-clientjourney-color-primary-dark) !important; }
+.evolvewp-clientjourney-color-primary-light { background-color: var(--evolvewp-clientjourney-color-primary-light) !important; }
+
+.evolvewp-clientjourney-color-success { background-color: var(--evolvewp-clientjourney-color-success) !important; }
+.evolvewp-clientjourney-color-warning { background-color: var(--evolvewp-clientjourney-color-warning) !important; }
+.evolvewp-clientjourney-color-error { background-color: var(--evolvewp-clientjourney-color-error) !important; }
+
+.evolvewp-clientjourney-color-white { background-color: var(--evolvewp-clientjourney-color-white) !important; border: 1px solid var(--evolvewp-clientjourney-color-gray-300) !important; }
+.evolvewp-clientjourney-color-gray-100 { background-color: var(--evolvewp-clientjourney-color-gray-100) !important; }
+.evolvewp-clientjourney-color-gray-300 { background-color: var(--evolvewp-clientjourney-color-gray-300) !important; }
+.evolvewp-clientjourney-color-gray-500 { background-color: var(--evolvewp-clientjourney-color-gray-500) !important; }
+.evolvewp-clientjourney-color-gray-700 { background-color: var(--evolvewp-clientjourney-color-gray-700) !important; }
+.evolvewp-clientjourney-color-gray-900 { background-color: var(--evolvewp-clientjourney-color-gray-900) !important; }
+
+/* WordPress Admin Compatibility */
+.wp-admin {
+    --admin-color-scheme-primary: #2271b1;
+    --admin-color-scheme-secondary: #72aee6;
+}

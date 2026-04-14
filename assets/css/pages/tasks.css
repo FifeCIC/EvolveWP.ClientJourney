@@ -1,0 +1,221 @@
+/**
+ * evolvewp-clientjourney - Tasks Page Styles
+ * 
+ * Page-specific styles for the tasks management page.
+ * Only includes styles that are specific to the tasks page layout
+ * and don't belong in the reusable components.
+ * 
+ * @package evolvewp-clientjourney/CSS/Pages
+ * @since 1.0.0
+ */
+
+/* Task Page Layout */
+.evolvewp-clientjourney-tasks-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: var(--evolvewp-clientjourney-spacing-lg) 0 !important;
+}
+
+.evolvewp-clientjourney-tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+    padding-bottom: var(--evolvewp-clientjourney-spacing-md);
+    border-bottom: var(--evolvewp-clientjourney-border-standard);
+}
+
+.evolvewp-clientjourney-tasks-title {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.evolvewp-clientjourney-tasks-actions {
+    display: flex;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+}
+
+/* Task Table Column Widths */
+.evolvewp-clientjourney-tasks-table .column-status {
+    width: 40px !important;
+    text-align: center !important;
+}
+
+.evolvewp-clientjourney-tasks-table .column-title {
+    width: 35% !important;
+}
+
+.evolvewp-clientjourney-tasks-table .column-source {
+    width: 15% !important;
+}
+
+.evolvewp-clientjourney-tasks-table .column-phase {
+    width: 15% !important;
+}
+
+.evolvewp-clientjourney-tasks-table .column-priority {
+    width: 15% !important;
+}
+
+.evolvewp-clientjourney-tasks-table .column-actions {
+    width: 20% !important;
+}
+
+/* Task Detail Layout */
+.evolvewp-clientjourney-task-detail {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+.evolvewp-clientjourney-task-main {
+    background: var(--evolvewp-clientjourney-color-white);
+    border: var(--evolvewp-clientjourney-border-standard);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+.evolvewp-clientjourney-task-sidebar {
+    background: var(--evolvewp-clientjourney-color-white);
+    border: var(--evolvewp-clientjourney-border-standard);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+.evolvewp-clientjourney-task-header {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+    padding-bottom: var(--evolvewp-clientjourney-spacing-md);
+    border-bottom: var(--evolvewp-clientjourney-border-standard);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.evolvewp-clientjourney-task-title {
+    margin: 0 0 var(--evolvewp-clientjourney-spacing-md) 0;
+    font-size: 18px;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+    font-weight: var(--evolvewp-clientjourney-font-weight-medium) !important;
+    display: block !important;
+    text-decoration: none !important;
+}
+
+.evolvewp-clientjourney-task-title:hover {
+    color: #0073aa !important;
+    text-decoration: underline !important;
+}
+
+.evolvewp-clientjourney-task-actions {
+    display: flex;
+    gap: var(--evolvewp-clientjourney-spacing-sm);
+    flex-wrap: wrap !important;
+    gap: var(--evolvewp-clientjourney-spacing-xs) !important;
+}
+
+.evolvewp-clientjourney-task-actions .button {
+    font-size: 12px !important;
+    padding: 2px 8px !important;
+    height: auto !important;
+    line-height: 2 !important;
+}
+
+/* Current Task Specific */
+.evolvewp-clientjourney-current-task {
+    background: var(--evolvewp-clientjourney-color-white);
+    border: var(--evolvewp-clientjourney-border-standard);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: var(--evolvewp-clientjourney-spacing-xl);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+.evolvewp-clientjourney-current-task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+    padding-bottom: var(--evolvewp-clientjourney-spacing-md);
+    border-bottom: var(--evolvewp-clientjourney-border-standard);
+}
+
+.evolvewp-clientjourney-current-task-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+}
+
+.evolvewp-clientjourney-current-task-status {
+    margin-left: auto;
+}
+
+.evolvewp-clientjourney-no-current-task {
+    text-align: center;
+    padding: var(--evolvewp-clientjourney-spacing-xl) 0;
+    color: #666;
+}
+
+/* Recent Tasks */
+.evolvewp-clientjourney-recent-tasks {
+    background: var(--evolvewp-clientjourney-color-white);
+    border: var(--evolvewp-clientjourney-border-standard);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    padding: var(--evolvewp-clientjourney-spacing-xl);
+    margin-top: var(--evolvewp-clientjourney-spacing-xl);
+}
+
+.evolvewp-clientjourney-recent-tasks-header {
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+    padding-bottom: var(--evolvewp-clientjourney-spacing-sm);
+    border-bottom: var(--evolvewp-clientjourney-border-standard);
+}
+
+.evolvewp-clientjourney-recent-tasks-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .evolvewp-clientjourney-task-detail {
+        grid-template-columns: 1fr;
+    }
+    
+    .evolvewp-clientjourney-tasks-header,
+    .evolvewp-clientjourney-current-task-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .evolvewp-clientjourney-tasks-actions,
+    .evolvewp-clientjourney-current-task-status {
+        margin-top: var(--evolvewp-clientjourney-spacing-md);
+        margin-left: 0;
+    }
+    
+    .evolvewp-clientjourney-filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .evolvewp-clientjourney-filter-search {
+        width: 100%;
+    }
+    
+    .evolvewp-clientjourney-filter-search-input {
+        flex: 1;
+    }
+}
+
+/* Utility Classes */
+.evolvewp-clientjourney-hidden {
+    display: none !important;
+}
+
+/* Task Detail Content */
+#task-detail-content {
+    margin-top: var(--evolvewp-clientjourney-spacing-md) !important;
+}
+
+/* Legacy classes mapping for backward compatibility */

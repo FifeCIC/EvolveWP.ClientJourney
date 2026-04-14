@@ -1,0 +1,72 @@
+/**
+ * evolvewp-clientjourney - Meta Data Component Styles
+ * 
+ * Styles for displaying meta information like task details, assignments, timestamps.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-clientjourney-meta-block">
+ *   <div class="evolvewp-clientjourney-meta-item">
+ *     <span class="evolvewp-clientjourney-meta-label">Label</span>
+ *     <span class="evolvewp-clientjourney-meta-value">Value</span>
+ *   </div>
+ * </div>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+.evolvewp-clientjourney-meta {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #555;
+}
+
+.evolvewp-clientjourney-meta-item {
+    margin-right: var(--evolvewp-clientjourney-spacing-lg);
+    display: flex;
+    align-items: center;
+}
+
+.evolvewp-clientjourney-meta-item .dashicons {
+    margin-right: var(--evolvewp-clientjourney-spacing-xs);
+    font-size: 16px;
+    color: #666;
+}
+
+.evolvewp-clientjourney-meta-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--evolvewp-clientjourney-spacing-md);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-lg);
+}
+
+.evolvewp-clientjourney-meta-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+}
+
+.evolvewp-clientjourney-meta-label {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: var(--evolvewp-clientjourney-spacing-xs);
+    font-weight: var(--evolvewp-clientjourney-font-weight-medium);
+}
+
+.evolvewp-clientjourney-meta-value {
+    font-size: var(--evolvewp-clientjourney-font-size);
+    font-weight: var(--evolvewp-clientjourney-font-weight-semibold);
+}
+
+.evolvewp-clientjourney-meta-value.highlight {
+    color: #2271b1;
+}
+
+.evolvewp-clientjourney-meta-block.inline .evolvewp-clientjourney-meta-item {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+/* Legacy classes mapping for backward compatibility */

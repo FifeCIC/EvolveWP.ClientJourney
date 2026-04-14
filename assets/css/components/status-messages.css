@@ -1,0 +1,115 @@
+/**
+ * evolvewp-clientjourney - Status Messages Component Styles
+ * 
+ * Styles for status messages, task state indicators, etc.
+ * 
+ * HTML Structure:
+ * <div class="evolvewp-clientjourney-status-message evolvewp-clientjourney-status-message-success">
+ *   <span class="dashicons dashicons-yes-alt"></span>
+ *   <span class="evolvewp-clientjourney-status-message-text">Status message text</span>
+ * </div>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+.evolvewp-clientjourney-status-message {
+    display: flex;
+    align-items: center;
+    padding: var(--evolvewp-clientjourney-spacing-md);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    margin-bottom: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-status-message .dashicons {
+    margin-right: var(--evolvewp-clientjourney-spacing-md);
+}
+
+.evolvewp-clientjourney-status-message-text {
+    flex: 1;
+    line-height: 1.4;
+}
+
+.evolvewp-clientjourney-status-message-success {
+    background-color: #f0f9eb;
+    border-left: 4px solid #46b450;
+    color: #2a6b31;
+}
+
+.evolvewp-clientjourney-status-message-success .dashicons {
+    color: #46b450;
+}
+
+.evolvewp-clientjourney-status-message-error {
+    background-color: #fdf2f2;
+    border-left: 4px solid #dc3232;
+    color: #8a1f1f;
+}
+
+.evolvewp-clientjourney-status-message-error .dashicons {
+    color: #dc3232;
+}
+
+.evolvewp-clientjourney-status-message-warning {
+    background-color: #fcf8e3;
+    border-left: 4px solid #ffb900;
+    color: #8a6d3b;
+}
+
+.evolvewp-clientjourney-status-message-warning .dashicons {
+    color: #ffb900;
+}
+
+.evolvewp-clientjourney-status-message-info {
+    background-color: #e9f3fa;
+    border-left: 4px solid #00a0d2;
+    color: #1e6586;
+}
+
+.evolvewp-clientjourney-status-message-info .dashicons {
+    color: #00a0d2;
+}
+
+/* Task Status Messages */
+.evolvewp-clientjourney-task-status {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--evolvewp-clientjourney-spacing-xs) var(--evolvewp-clientjourney-spacing-md);
+    border-radius: var(--evolvewp-clientjourney-border-radius);
+    font-weight: var(--evolvewp-clientjourney-font-weight-medium);
+    font-size: 13px;
+}
+
+.evolvewp-clientjourney-task-status .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-right: var(--evolvewp-clientjourney-spacing-xs);
+}
+
+.evolvewp-clientjourney-task-status-pending {
+    background-color: #f1f1f1;
+    color: #666;
+}
+
+.evolvewp-clientjourney-task-status-progress {
+    background-color: #e9f3fa;
+    color: #1e6586;
+}
+
+.evolvewp-clientjourney-task-status-completed {
+    background-color: #f0f9eb;
+    color: #2a6b31;
+}
+
+.evolvewp-clientjourney-task-status-onhold {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+
+.evolvewp-clientjourney-task-status-cancelled {
+    background-color: #fdf2f2;
+    color: #8a1f1f;
+}
+
+/* Legacy classes mapping for backward compatibility */

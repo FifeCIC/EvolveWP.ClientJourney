@@ -1,0 +1,125 @@
+/**
+ * evolvewp-clientjourney Dark Theme - Admin Layout Styles
+ * 
+ * Dark theme overrides for admin page layouts and structure.
+ * 
+ * @package evolvewp-clientjourney/CSS/Dark
+ * @since 1.0.0
+ */
+
+.evolvewp-clientjourney-dark-theme {
+    background-color: var(--evolvewp-clientjourney-color-white);
+    color: var(--evolvewp-clientjourney-color-black);
+}
+
+/* Admin Page Structure */
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-admin-page {
+    background-color: var(--evolvewp-clientjourney-color-white);
+}
+
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-admin-section {
+    background: var(--evolvewp-clientjourney-color-gray-50);
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-300);
+    color: var(--evolvewp-clientjourney-color-black);
+}
+
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-admin-section h2 {
+    color: var(--evolvewp-clientjourney-color-black);
+    border-bottom: 1px solid var(--evolvewp-clientjourney-color-gray-300);
+}
+
+/* Service Card Layout */
+.evolvewp-clientjourney-dark-theme .service-overview {
+    background: var(--evolvewp-clientjourney-color-gray-50);
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-300);
+    color: var(--evolvewp-clientjourney-color-black);
+}
+
+.evolvewp-clientjourney-dark-theme .service-details h3 {
+    color: var(--evolvewp-clientjourney-color-black);
+}
+
+/* Import/Export Layout */
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-import-section,
+.evolvewp-clientjourney-dark-theme .evolvewp-clientjourney-export-section {
+    background-color: var(--evolvewp-clientjourney-color-gray-100);
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-300);
+    color: var(--evolvewp-clientjourney-color-black);
+}
+
+/* Feature Status Tables */
+.evolvewp-clientjourney-dark-theme .feature-status-table th {
+    background: var(--evolvewp-clientjourney-color-gray-100);
+    color: var(--evolvewp-clientjourney-color-black);
+    border-bottom: 1px solid var(--evolvewp-clientjourney-color-gray-400);
+}
+
+.evolvewp-clientjourney-dark-theme .feature-status-table td {
+    color: var(--evolvewp-clientjourney-color-black);
+    border-bottom: 1px solid var(--evolvewp-clientjourney-color-gray-200);
+}
+
+.evolvewp-clientjourney-dark-theme .feature-status-table tr:hover {
+    background: var(--evolvewp-clientjourney-color-gray-100);
+}
+
+.evolvewp-clientjourney-dark-theme .feature-tab-header {
+    background: var(--evolvewp-clientjourney-color-gray-200);
+}
+
+.evolvewp-clientjourney-dark-theme .completion-stats {
+    background: var(--evolvewp-clientjourney-color-gray-50);
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-300);
+    color: var(--evolvewp-clientjourney-color-black);
+}
+
+/* Button Styles */
+.evolvewp-clientjourney-dark-theme .test-button {
+    background-color: var(--evolvewp-clientjourney-color-primary);
+    color: var(--evolvewp-clientjourney-color-white);
+}
+
+.evolvewp-clientjourney-dark-theme .test-button:hover {
+    background-color: var(--evolvewp-clientjourney-color-primary-dark);
+}
+
+.evolvewp-clientjourney-dark-theme .test-button.maintenance {
+    background-color: var(--evolvewp-clientjourney-color-gray-500);
+}
+
+/* Quick Actions Bar */
+.evolvewp-clientjourney-dark-theme .api-quick-actions {
+    background: var(--evolvewp-clientjourney-color-gray-50);
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-300);
+}
+
+.evolvewp-clientjourney-dark-theme .quick-action-button {
+    background: var(--evolvewp-clientjourney-color-gray-100);
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-400);
+    color: var(--evolvewp-clientjourney-color-black);
+}
+
+.evolvewp-clientjourney-dark-theme .quick-action-button:hover {
+    background: var(--evolvewp-clientjourney-color-gray-200);
+    color: var(--evolvewp-clientjourney-color-primary);
+}
+
+/* Issues Tab Styles */
+.evolvewp-clientjourney-dark-theme .issue-row:hover {
+    background-color: var(--evolvewp-clientjourney-color-gray-100);
+}
+
+/* BugNet Log Viewer Styles */
+.evolvewp-clientjourney-dark-theme .bugnet-log-viewer h3 {
+    color: var(--evolvewp-clientjourney-color-black);
+}
+
+.evolvewp-clientjourney-dark-theme .bugnet-log-viewer textarea {
+    background: var(--evolvewp-clientjourney-color-gray-100);
+    border: 1px solid var(--evolvewp-clientjourney-color-gray-400);
+    color: var(--evolvewp-clientjourney-color-black);
+}
+
+.evolvewp-clientjourney-dark-theme .bugnet-log-viewer p {
+    color: var(--evolvewp-clientjourney-color-gray-700);
+}

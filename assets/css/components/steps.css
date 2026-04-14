@@ -1,0 +1,74 @@
+/**
+ * evolvewp-clientjourney - Steps Component
+ * 
+ * Styles for step indicators used in wizards.
+ * 
+ * HTML Structure:
+ * <ol class="evolvewp-clientjourney-steps">
+ *   <li class="evolvewp-clientjourney-step active">Step 1</li>
+ *   <li class="evolvewp-clientjourney-step">Step 2</li>
+ *   <li class="evolvewp-clientjourney-step">Step 3</li>
+ * </ol>
+ * 
+ * @package evolvewp-clientjourney/CSS/Components
+ * @since 1.0.0
+ */
+
+/* Step indicators */
+.evolvewp-clientjourney-steps {
+    padding: 0 0 24px;
+    margin: 0;
+    list-style: none outside;
+    overflow: hidden;
+    color: #ccc;
+    width: 100%;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.evolvewp-clientjourney-step {
+    width: 20%;
+    float: left;
+    padding: 0 0 0.8em;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    border-bottom: 4px solid #ccc;
+    line-height: 1.4em;
+}
+
+.evolvewp-clientjourney-step:before {
+    content: "";
+    border: 4px solid #ccc;
+    border-radius: 100%;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -6px;
+    margin-bottom: -8px;
+    background: #fff;
+}
+
+.evolvewp-clientjourney-step.active {
+    border-color: #472F75;
+    color: #472F75;
+}
+
+.evolvewp-clientjourney-step.active:before {
+    border-color: #472F75;
+}
+
+.evolvewp-clientjourney-step.done {
+    border-color: #472F75;
+    color: #472F75;
+}
+
+.evolvewp-clientjourney-step.done:before {
+    border-color: #472F75;
+    background: #472F75;
+}
+
+/* Legacy classes mapping for backward compatibility */
